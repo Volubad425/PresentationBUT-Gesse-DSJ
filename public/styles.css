@@ -133,7 +133,16 @@ header #fond_image{
 
 /* -------- Page 5 -------- */
 
-/* -------- Page 6 -------- */
+/* -------- Page 6 -------- */ 
+
+.texte {
+    display : flex; 
+    flex-direction : row; 
+} 
+
+.contact {
+    flex-direction : row; 
+}
 
 /* -------- Bas de page -------- */
 
