@@ -95,7 +95,7 @@ header #fond_image{
 /* -------- Page 2 -------- */ 
 
 #page h1 { 
-    border-bottom: solid 4px #C34444;
+    border-bottom: solid 4px #C34444; 
 }
 
 #page h2 { 
@@ -112,6 +112,18 @@ header #fond_image{
 
 #page td {
     border : 1px solid black; 
+} 
+
+#plus {
+    color : green; 
+}
+
+#moyen {
+    color : orange; 
+} 
+
+#peu {
+    color : red; 
 }
 
 /* -------- Page 3 -------- */
