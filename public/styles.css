@@ -135,13 +135,15 @@ header #fond_image{
 
 /* -------- Page 6 -------- */ 
 
-.texte {
-    display : flex; 
-    flex-direction : row; 
+#formulaire {
+    display : flex;
+    flex-direction: row;
 } 
 
-.contact {
-    flex-direction : row; 
+.contact { 
+    text-align : justify; 
+    margin-right : 3px; 
+    width : 180%;
 }
 
 /* -------- Bas de page -------- */
