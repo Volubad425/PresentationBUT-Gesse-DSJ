@@ -1,0 +1,182 @@
+body{
+    margin:auto;
+}
+
+/* -------- En-tête -------- */
+
+header #fond_bleu{
+    background-color: #584CE3;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid black 10px;
+}
+
+header #fond_bleu p{
+    margin-left: 30px;
+    font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #403584;
+    
+}
+
+header #fond_image{
+    height: 320px;
+    background-image: url(images/21-219010_java-code.jpg);
+    background-position: left -400px;
+}
+
+#header nav{
+    background-color: black;
+    height: 60px;
+}
+
+#header nav ul{
+    height: 100%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#header nav li{
+    align-self: center;
+}
+
+#header nav a{
+    text-decoration: none;
+    margin: 0px 50px 0px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 17px;
+}
+
+#header nav a:hover{
+    border-bottom: solid white 2px;
+    color: red;
+}
+
+#contenu_page{
+    margin: 0px 15px 0px;
+}
+
+/* -------- Page 1 -------- */
+
+#accueil_contenu h1{
+    border-bottom: solid 4px #C34444;
+}
+
+#accueil_contenu h2{
+    border-bottom: solid 4px #8851F5;
+}
+
+#accueil_contenu .image{
+    text-align: center;
+}
+
+#accueil_contenu .image img{
+    width: 400px;
+    height: 267px;
+}
+
+#accueil_contenu .image p{
+    margin-top: 2px;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #C8C8C8;
+    text-shadow: black 2px;
+}
+
+/* -------- Page 2 -------- */ 
+
+#page h1 { 
+    border-bottom: solid 4px #C34444;
+}
+
+#page h2 { 
+    border-bottom: solid 4px #8851F5;
+} 
+
+#page h3 { 
+    border-bottom: solid 4px #18bb3c; 
+} 
+
+#page table {
+    border-collapse : collapse; 
+} 
+
+#page td {
+    border : 1px solid black; 
+}
+
+/* -------- Page 3 -------- */
+
+/* -------- Page 4 -------- */
+
+/* -------- Page 5 -------- */
+
+/* -------- Page 6 -------- */
+
+/* -------- Bas de page -------- */
+
+footer{
+    border-top: solid black 10px;
+    background-color: #584CE3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer_texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer_texte ul{
+    padding: 0px 10px 0px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+#footer_texte li{
+    margin: 0px 10px 0px;
+}
+
+#footer_texte li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#footer_texte li a:hover{
+    color: red;
+}
+
+#footer_texte p{
+    padding: 0px 20px 0px;
+    color: white;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#footer_images img{
+    margin: 0px 10px 0px;
+}
+
+#footer_images img:nth-child(1){
+    width:200px;
+    height:116px;
+}
+
+#footer_images img:nth-child(2){
+    width:100px;
+    height:115px;
+}
