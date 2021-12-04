@@ -26,16 +26,61 @@
                 </nav>
             </div>
             <!---- Contenu de la page (à changer en fonction de la page) ----> 
+
+            <div id="contenu_page"> 
             <h1> Contact </h1>
             <div id="formulaire">
                 <section id = "texte" >  
                     <p> Si vous avez des questions, vous pouvez nous contacter à l'aide du formulaire ci-contre </p>
                 </section> 
     
-                <section id = "contact" > 
-                    <p> bnejnbljfgvuertbc,sfj hydgrjgdslgslghsjdhdjhdjgdhjdghjdcw </p>
-                </section>
-            </div>
+            <div id = "contact" >  
+                    <h2> Formulaire de contact </h2> 
+
+                    <form method = "post" action = "mailto:cocogesseentressangle@gmail.com"> 
+
+                        <div id = "identite" > 
+                        <label for = "prenom" > Prénom : </label> 
+                        <input type = "text" id  = "prenom" placeholder = "Rose" required > 
+
+                        <label for = "nom" > Nom : </label> 
+                        <input type = "text" id = "nom" placeholder = "Martin" required > 
+
+                        </div> 
+
+                        <div id = "email" > 
+
+                        <label for = "e-mail" > E-mail : </label> 
+                        <input type = "email" id = "e-mail" placeholder = "votreprenom.nom@domaine.fr" required > 
+
+                        <label for = "sujet" > Sujet :  </label> 
+                        
+                        <select name="sujet" id="sujet" required>
+                            <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                            <option value = "questiongenerale" > Question générale </option>
+                            <option value = "questioniut" > Question sur les I.U.T. </option>
+                            <option value = "questionsurlespoursuitesetude" > Question sur les poursuites d'étude </option> 
+                        </select> 
+
+                        </div> 
+
+                        <div id = "message" > 
+
+                        <label for = "message" > Votre message : </label>
+                        <textarea id = "message" name = "message" placeholder = "Message" required></textarea> 
+                        </div> 
+
+                        <button type = "submit" > Envoyer mon message </button>
+                        
+                        
+
+                            
+
+                    </form>
+                </div> 
+            </div> 
+
+            </div> 
             
             <!-------- Bas de page -------->
             <footer>
