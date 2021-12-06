@@ -125,9 +125,37 @@ header #fond_image{
 
 #peu {
     color : red; 
+} 
+
+/* -------- Page 3 -------- */ 
+
+#personne1 { 
+    background-color : #6e608a; 
+    border-radius : 30px 30px 30px 30px; 
+    margin-left : 5px; 
+    width : 450px; 
+} 
+
+#personne1 h2 {
+    border-bottom : solid 0px black; 
+} 
+
+#personne1 h3 {
+    border-bottom : solid 0px black; 
+} 
+
+#personne1 #titre { 
+    display  : flex; 
+} 
+
+#personne1 img { 
+    width : 200px; 
 }
 
-/* -------- Page 3 -------- */
+cite ::before { 
+    content : url('images/guillemets-png-8-300x239.png'); 
+}
+
 
 /* -------- Page 4 -------- */
 
