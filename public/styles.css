@@ -138,10 +138,13 @@ header #fond_image{
 
 #personne1 h2 {
     border-bottom : solid 0px black; 
+    margin-bottom : 0px; 
+    margin-left : 10px; 
 } 
 
 #personne1 h3 {
     border-bottom : solid 0px black; 
+    font-size : 25px; 
 } 
 
 #personne1 #titre { 
@@ -150,10 +153,24 @@ header #fond_image{
 
 #personne1 img { 
     width : 200px; 
+    margin-left : 10px; 
+
+} 
+
+#personne1 #contenu {
+    display : flex; 
+    flex-direction : column; 
+} 
+
+#personne1 #contenu img { 
+    width : 50px;  
+    margin-top : 10px; 
+    margin-left : 10px; 
 }
 
-cite ::before { 
-    content : url('images/guillemets-png-8-300x239.png'); 
+#personne1 cite {
+    margin-bottom : 10px;  
+    text-align : center; 
 }
 
 
