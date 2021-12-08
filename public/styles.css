@@ -129,48 +129,59 @@ header #fond_image{
 
 /* -------- Page 3 -------- */ 
 
-#personne1 { 
+#personne1, #personne2 { 
     background-color : #6e608a; 
     border-radius : 30px 30px 30px 30px; 
     margin-left : 5px; 
-    width : 450px; 
+    width : 450px;  
+    height : 250px;  
 } 
 
-#personne1 h2 {
+#personne1 h2, #personne2 h2 {
     border-bottom : solid 0px black; 
     margin-bottom : 0px; 
     margin-left : 10px; 
 } 
 
-#personne1 h3 {
+#personne1 h3, #personne2 h3 {
     border-bottom : solid 0px black; 
     font-size : 25px; 
+    margin-bottom : 0px; 
 } 
 
-#personne1 #titre { 
+#personne1 #titre, #personne2 #titre { 
     display  : flex; 
 } 
 
-#personne1 img { 
+#personne1 img, #personne2 img { 
     width : 200px; 
     margin-left : 10px; 
 
 } 
 
-#personne1 #contenu {
+#personne1 #contenu, #personne2 #contenu {
     display : flex; 
     flex-direction : column; 
 } 
 
-#personne1 #contenu img { 
+#personne1 #contenu img, #personne2 #contenu img { 
     width : 50px;  
     margin-top : 10px; 
     margin-left : 10px; 
 }
 
-#personne1 cite {
+#personne1 cite, #personne2 cite {
     margin-bottom : 10px;  
     text-align : center; 
+} 
+
+#personne2 {
+    margin-left : 30%; 
+    margin-top : 10%; 
+} 
+
+#contenu_page3 {
+    display : flex; 
 }
 
 
