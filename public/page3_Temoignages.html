@@ -17,7 +17,7 @@
                 <nav>
                     <ul>
                         <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="page2_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
+                        <li><a href="page_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
                         <li><a href="#">Temoignages</a></li>
                         <li><a href="page4_A_propos_de_nous.html">A propos de nous</a></li>
                         <li><a href="page5_Liste_des_IUT.html">Liste des IUT</a></li>
@@ -33,12 +33,20 @@
                 <div id = "personne1" > 
                     <div id = "titre" > 
 
-                        <h2> Corentin GESSE--ENTRESSANGLE </h2> 
+                        <h2> Nom : Corentin GESSE--ENTRESSANGLE </h2> 
 
-                        <h3> IUT Lyon 1 - Villeurbanne </h3> 
+                        <h3> IUT : IUT Lyon 1 - Villeurbanne </h3> 
                 
                     </div> 
-                    <img src = "images/langfr-800px-DL_02_BUT.png" alt = "cinq étoiles" > 
+
+                    <div id = "contenu_note" > 
+                        <p> 
+                            07/12/2021 à 16h00 Note : 
+                        </p> 
+
+                        <img src = "images/langfr-800px-DL_02_BUT.png" alt = "cinq étoiles" > 
+
+                    </div> 
 
                     <div id = "contenu" > 
                         <img src = "images/guillemets-png-8-300x239.png" > 
@@ -54,12 +62,20 @@
                 <div id = "personne2" >  
                     <div id = "titre" > 
 
-                        <h2> Corentin GESSE--ENTRESSANGLE </h2> 
+                        <h2> Nom : Corentin GESSE--ENTRESSANGLE </h2> 
 
-                        <h3> IUT Lyon 1 - Villeurbanne </h3> 
+                        <h3> IUT : IUT Lyon 1 - Villeurbanne </h3> 
                 
                     </div> 
-                    <img src = "images/langfr-800px-DL_02_BUT.png" alt = "cinq étoiles" > 
+
+                    <div id = "contenu_note" > 
+                        <p> 
+                            07/12/2021 à 17h00 Note : 
+                        </p> 
+
+                        <img src = "images/langfr-800px-DL_02_BUT.png" alt = "cinq étoiles" > 
+
+                    </div> 
 
                     <div id = "contenu" > 
                         <img src = "images/guillemets-png-8-300x239.png" > 
@@ -72,6 +88,74 @@
                 </div> 
 
             </div> 
+
+            <p> 
+                Vous pouvez aussi laisser votre commentaire si vous êtes étudiants en BUT Informatique à l'aide du formulaire 
+                ci-dessous 
+            </p> 
+
+            <div id = "contact" >  
+                <h2> Formulaire pour laisser un commentaire  </h2> 
+
+                <form method = "post" action = "mailto:cocogesseentressangle@gmail.com"> 
+
+                    <div id = "identite" > 
+                    <label for = "prenom" > Prénom : </label> 
+                    <input type = "text" id  = "prenom" placeholder = "Rose" required > 
+
+                    <label for = "nom" > Nom : </label> 
+                    <input type = "text" id = "nom" placeholder = "Martin" required > 
+                    
+                    </div> 
+
+                    <label for = "IUT" > ville de votre IUT : </label> 
+                    <input type = "text" id = "IUT" placeholder = "Martin" required > 
+
+                    <div id = "email" > 
+
+                    <label for = "e-mail" > E-mail : </label> 
+                    <input type = "email" id = "e-mail" placeholder = "votreprenom.nom@domaine.fr" required > 
+
+                    <label for = "sujet1" > Combien notez vous le BUT Informatique sur 5 </label> 
+                    
+                    <select name="sujet1" id="sujet1" required>
+                        <option value="" disabled selected hidden> Choisissez une note sur 5 </option>
+                        <option value = "1" > 1 </option>
+                        <option value = "2" > 2 </option>
+                        <option value = "3" > 3 </option> 
+                        <option value = "4" > 4 </option> 
+                        <option value = "5" > 5 </option> 
+                    </select> 
+
+                    <label for = "sujet2" > Voulez vous que votre nom soit visible par tous ? </label> 
+
+                    <select name="sujet2" id="sujet2" required>
+                        <option value="" disabled selected hidden> Choisissez oui ou non </option>
+                        <option value = "1" > oui </option>
+                        <option value = "2" > non </option>
+                    </select> 
+
+                    </div> 
+
+                    <div id = "message" > 
+
+                    <label for = "message" > Votre message : </label>
+                    <textarea id = "message" name = "message" placeholder = "Message" required></textarea> 
+                    </div> 
+
+                    <button type = "submit" > Envoyer mon commentaire </button>
+                    
+                    
+
+                        
+
+                </form>
+            </div> 
+
+            <p> 
+                Votre commentaire sera étudié et sera publié dans les plus brefs délais 
+            </p>
+
             <!-------- Bas de page -------->
             <footer>
                 <div id="footer_texte"> 
