@@ -35,7 +35,7 @@ header #fond_bleu p{
 
 header #fond_image{
     height: 320px;
-    background-image: url(images/21-219010_java-code.jpg);
+    background-image: url(images/Coding-Wallpaper-Html-Code-Wallpaper-Hd-Download-.jpg);
     background-position: left -400px;
 }
 
@@ -85,6 +85,66 @@ h1, h2, h3{
     font-family: "JosefinSans-Light", sans-serif;
 }
 
+label {
+    font-family: "JosefinSans-Medium", sans-serif;
+}
+
+label p{
+    margin: 2px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    font-family: "JosefinSans-Medium", sans-serif;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    font-family: "JosefinSans-Medium", sans-serif;
+    resize: none;
+}
+
+textarea::placeholder{
+    padding: 5px;
+}
+
+select{
+    border: 2px solid rgb(150, 150, 150);
+    background-color: rgb(230, 230, 230);
+    font-family: "JosefinSans-Medium", sans-serif;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: center;
+}
+
+button{
+    border: 2px solid rgb(150, 150, 150);
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    font-family: "JosefinSans-Medium", sans-serif;
+    height: 30px;
+}
+
+button:hover{
+    color:white;
+    background-color: black;
+    border: black 2px solid;
+}
+
 /* -------- Page 1 -------- */
 
 #accueil_contenu h1{
@@ -128,23 +188,28 @@ h1, h2, h3{
 
 #page table {
     border-collapse : collapse; 
-    border : 2px solid black; 
+    border : 2px solid black;
+    font-family: "JosefinSans-Medium", sans-serif; 
 } 
 
 #page td {
     border : 1px solid black; 
+    padding: 7px;
 } 
 
 #plus {
     color : green; 
+    font-weight: bold;
 }
 
 #moyen {
     color : orange; 
+    font-weight: bold;
 } 
 
 #peu {
     color : red; 
+    font-weight: bold;
 } 
 
 /* -------- Page 3 -------- */ 
@@ -212,8 +277,8 @@ h1, h2, h3{
 } 
 
 #tableau { 
-    display : flex; 
-} 
+    display : flex;
+}
 
 #premierecase {
     background-color : #584CE3; 
