@@ -59,7 +59,7 @@ header #fond_image{
 
 #header nav a{
     text-decoration: none;
-    margin: 0px 50px 0px;
+    margin: 0px 40px 0px;
     color: white;
     font-family: 'Lucida Console', sans-serif;
     font-size: 15px;
@@ -128,7 +128,7 @@ h1, h2, h3{
 
 #page table {
     border-collapse : collapse; 
-    border-bottom : 6px solid black; 
+    border : 2px solid black; 
 } 
 
 #page td {
@@ -247,7 +247,16 @@ h1, h2, h3{
 
 /* -------- Page 5 -------- */
 
+#grey_square{
+    background-color: rgb(207, 207, 207);
+    border-radius: 7px;
+    padding: 2px 8px 2px;
+    font-family: "JosefinSans-Medium", sans-serif;;
+}
 
+#grey_square > p {
+    font-weight: bold;
+}
 
 /* -------- Page 6 -------- */ 
 
