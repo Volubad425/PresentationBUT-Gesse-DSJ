@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "JosefinSans-Light";
+    src: url(fonts/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "JosefinSans-Medium";
+    src: url(fonts/JosefinSans-Medium.ttf);
+}
+
 body{
     margin:auto;
 }
@@ -51,9 +61,9 @@ header #fond_image{
     text-decoration: none;
     margin: 0px 50px 0px;
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    padding-bottom: 17px;
+    font-family: 'Lucida Console', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
 }
 
 #header nav a:hover{
@@ -61,8 +71,18 @@ header #fond_image{
     color: red;
 }
 
+/* ------- Ensemble des pages ------- */
+
 #contenu_page{
     margin: 0px 15px 0px;
+}
+
+#contenu_page p{
+    font-family: "JosefinSans-Medium", sans-serif;
+}
+
+h1, h2, h3{
+    font-family: "JosefinSans-Light", sans-serif;
 }
 
 /* -------- Page 1 -------- */
