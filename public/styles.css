@@ -211,6 +211,30 @@ h1, h2, h3{
     display : flex; 
 } 
 
+#tableau { 
+    display : flex; 
+} 
+
+#premierecase {
+    background-color : #584CE3; 
+} 
+
+#ingenieur {
+    background-color : rgb(28, 204, 28); 
+    height : 20px; 
+} 
+
+#licenseinformatique { 
+    background-color : rgb(10, 134, 10); 
+} 
+
+#licenseprofessionnelle { 
+    background-color : rgb(206, 22, 22); 
+} 
+
+#masterinformatique { 
+    background-color : rgb(9, 148, 9); 
+}
 /* -------- Page 4 -------- */
 
 /* -------- Page 5 -------- */
