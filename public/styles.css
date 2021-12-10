@@ -193,7 +193,7 @@ h1, h2, h3{
     margin-left : 10px; 
 }
 
-#personne1 cite, #personne2 cite {
+#personne1 cite, #personne2 cite { 
     margin-bottom : 10px;  
     text-align : center; 
 } 
@@ -221,19 +221,27 @@ h1, h2, h3{
 
 #ingenieur {
     background-color : rgb(28, 204, 28); 
-    height : 20px; 
+    margin-top : 0px; 
+    padding-top : 0px; 
+    height : 30px; 
 } 
 
 #licenseinformatique { 
     background-color : rgb(10, 134, 10); 
+    margin-top : 0px; 
+    height : 30px; 
 } 
 
 #licenseprofessionnelle { 
     background-color : rgb(206, 22, 22); 
+    margin-top : 0px; 
+    height : 30px; 
 } 
 
 #masterinformatique { 
     background-color : rgb(9, 148, 9); 
+    margin-top : 0px; 
+    height : 30px;  
 }
 /* -------- Page 4 -------- */
 
