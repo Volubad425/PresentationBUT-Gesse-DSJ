@@ -8,40 +8,52 @@
     src: url(fonts/JosefinSans-Medium.ttf);
 }
 
+@font-face {
+    font-family: "ZillaSlab-Medium";
+    src: url(fonts/ZillaSlab-Medium.ttf);
+}
+
+@font-face {
+    font-family: "NEONLEDLight";
+    src: url(fonts/NEONLEDLight.ttf);
+}
+
 body{
     margin:auto;
+    background-color: rgb(5, 5, 5);
+    color: white;
 }
 
 /* -------- En-tête -------- */
 
 header #fond_bleu{
-    background-color: #584CE3;
+    background-color: black;
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: solid black 10px;
+    border-bottom: solid white 5px;
 }
 
 header #fond_bleu p{
     margin-left: 30px;
     font-size: 45px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:"NEONLEDLight", sans-serif;
     color: white;
-    font-weight: bold;
-    -webkit-text-stroke: 2px #403584;
     
 }
 
 header #fond_image{
     height: 320px;
-    background-image: url(images/Coding-Wallpaper-Html-Code-Wallpaper-Hd-Download-.jpg);
+    background-image: url(images/21-219010_java-code.jpg);
     background-position: left -400px;
 }
 
 #header nav{
     background-color: black;
-    height: 60px;
+    border-top: white 2px solid;
+    border-bottom: white 2px solid;
+    height: 60px
 }
 
 #header nav ul{
@@ -63,22 +75,66 @@ header #fond_image{
     color: white;
     font-family: 'Lucida Console', sans-serif;
     font-size: 15px;
-    padding-bottom: 20px;
 }
 
 #header nav a:hover{
-    border-bottom: solid white 2px;
     color: red;
 }
 
 /* ------- Ensemble des pages ------- */
 
 #contenu_page{
-    margin: 0px 15px 0px;
+    margin: 40px 30px 0px;
+    padding: 20px 30px 30px;
+}
+
+.bordure{
+    --borderWidth: 4px;
+    position: relative;
+    background-color: black;
+    border-top-left-radius: var(--borderWidth);
+    border-top-right-radius: var(--borderWidth);
+}
+
+.bordure:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(
+        60deg,red, orange, yellow, green, blue, indigo, purple);
+    z-index: -1;
+    border-top-left-radius: calc(2 * var(--borderWidth));
+    border-top-right-radius: calc(2 * var(--borderWidth));
+    animation: bordureanime 2s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes bordureanime {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #contenu_page p{
     font-family: "JosefinSans-Medium", sans-serif;
+}
+
+#contenu_page a{
+    color: red;
+    text-decoration: none;
+}
+
+#contenu_page a:hover{
+    text-decoration: underline;
 }
 
 h1, h2, h3{
@@ -94,24 +150,26 @@ label p{
 }
 
 input{
+    color: white;
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
     padding: 10px;
-    border: 2px solid rgb(150, 150, 150);
+    border: 2px solid white;
+    background-color: black;
     border-radius: 5px;
-    background-color: rgb(230, 230, 230);
     font-family: "JosefinSans-Medium", sans-serif;
 }
 
 textarea{
+    color: white;
     width: 100%;
     height: 100px;
     padding: 5px;
     margin-bottom: 20px;
-    border: 2px solid rgb(150, 150, 150);
+    border: 2px solid white;;
     border-radius: 5px;
-    background-color: rgb(230, 230, 230);
+    background-color: black;
     font-family: "JosefinSans-Medium", sans-serif;
     resize: none;
 }
@@ -121,8 +179,9 @@ textarea::placeholder{
 }
 
 select{
+    color: white;
     border: 2px solid rgb(150, 150, 150);
-    background-color: rgb(230, 230, 230);
+    background-color: black;
     font-family: "JosefinSans-Medium", sans-serif;
     border-radius: 5px;
     height: 30px;
@@ -132,17 +191,18 @@ select{
 }
 
 button{
+    color: white;
     border: 2px solid rgb(150, 150, 150);
-    background-color: rgb(230, 230, 230);
+    background-color: black;
     border-radius: 5px;
     font-family: "JosefinSans-Medium", sans-serif;
     height: 30px;
 }
 
 button:hover{
-    color:white;
-    background-color: black;
-    border: black 2px solid;
+    color:black;
+    background-color: white;
+    border: white 2px solid;
 }
 
 /* -------- Page 1 -------- */
@@ -188,12 +248,12 @@ button:hover{
 
 #page table {
     border-collapse : collapse; 
-    border : 2px solid black;
+    border : 2px solid white;
     font-family: "JosefinSans-Medium", sans-serif; 
 } 
 
 #page td {
-    border : 1px solid black; 
+    border : 1px solid white; 
     padding: 7px;
 } 
 
@@ -302,16 +362,53 @@ button:hover{
 }
 /* -------- Page 4 -------- */
 
+#case1, #case2{
+    border: 2px white solid;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: flex-start;
+    color: white;
+}
+
+#case1 .nom, #case2 .nom{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+#case1 .fonction_actuelle, #case2 .fonction_actuelle{
+    font-style: italic;
+    font-size: 12px;
+    font-family: "ZillaSlab-Medium", sans-serif;
+}
+
+#pp{
+    margin-right: 20px;
+    width: 125px;
+    height: 125px;
+    border: 6px white solid;
+    border-radius: 100%;
+}
+
+#case1 img, #case2 img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+}
+
 /* -------- Page 5 -------- */
 
-#grey_square{
-    background-color: rgb(207, 207, 207);
+#square{
+    border: white 2px solid;
     border-radius: 7px;
     padding: 2px 8px 2px;
     font-family: "JosefinSans-Medium", sans-serif;;
 }
 
-#grey_square > p {
+#square > p {
     font-weight: bold;
 }
 
@@ -331,6 +428,7 @@ button:hover{
     margin-left : 50px; 
     text-align : justify; 
     margin-right : 3px; 
+    width: 30%;
 } 
 
 #email {
@@ -346,8 +444,8 @@ button:hover{
 /* -------- Bas de page -------- */ 
 
 footer{
-    border-top: solid black 10px;
-    background-color: #584CE3;
+    border-top: solid white 5px;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
