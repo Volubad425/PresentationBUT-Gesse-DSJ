@@ -375,8 +375,47 @@ button:hover{
 
 #masterinformatique { 
     background-color : rgb(9, 148, 9); 
+    height  : 80px; 
+} 
+
+#deuxsemalternance {
+    background-color : rgb(28, 204, 28); 
+    width : 300px;  
     height : 80px; 
+} 
+
+#deuxsemalternance p { 
+    margin-top : 0px; 
 }
+
+#presentiels { 
+    background-color : rgb(9, 148, 9); 
+    width : 150px; 
+    height  : 80px; 
+} 
+
+#alternance1 { 
+    background-color : rgb(28, 204, 28); 
+    width : 300px;  
+    height : 80px; 
+} 
+
+#alternance2 { 
+    background-color : rgb(9, 148, 9); 
+    width : 300px;  
+    height : 80px; 
+} 
+
+#deuxsemstage { 
+    background-color : rgb(9, 148, 9); 
+    width : 150px;   
+    height : 80px; 
+} 
+
+#deuxsempresentiels { 
+    display : flex; 
+}
+
 /* -------- Page 4 -------- */
 
 #case1, #case2{
