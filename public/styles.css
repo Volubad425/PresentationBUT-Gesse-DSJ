@@ -39,6 +39,7 @@ header #fond_bleu p{
     margin-left: 30px;
     font-size: 45px;
     font-family:"NEONLEDLight", sans-serif;
+    text-transform: uppercase;
     color: white;
     
 }
@@ -89,25 +90,25 @@ header #fond_image{
 }
 
 .bordure{
-    --borderWidth: 4px;
+    --Taillebordure: 4px;
     position: relative;
     background-color: black;
-    border-top-left-radius: var(--borderWidth);
-    border-top-right-radius: var(--borderWidth);
+    border-top-left-radius: var(--Taillebordure);
+    border-top-right-radius: var(--Taillebordure);
 }
 
 .bordure:after {
     content: '';
     position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
+    top: calc(-1 * var(--Taillebordure));
+    left: calc(-1 * var(--Taillebordure));
+    height: calc(100% + var(--Taillebordure) * 2);
+    width: calc(100% + var(--Taillebordure) * 2);
     background: linear-gradient(
         60deg,red, orange, yellow, green, blue, indigo, purple);
     z-index: -1;
-    border-top-left-radius: calc(2 * var(--borderWidth));
-    border-top-right-radius: calc(2 * var(--borderWidth));
+    border-top-left-radius: calc(2 * var(--Taillebordure));
+    border-top-right-radius: calc(2 * var(--Taillebordure));
     animation: bordureanime 2s ease alternate infinite;
     background-size: 300% 300%;
 }
