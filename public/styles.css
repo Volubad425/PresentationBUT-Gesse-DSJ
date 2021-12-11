@@ -346,6 +346,14 @@ button:hover{
     text-align : center; 
 }
 
+#tableaufleche { 
+    display : flex; 
+    flex-direction : column;  
+}
+
+#tableaufleche p { 
+    text-align : left; 
+}
 #premierecase {
     background-color : #584CE3; 
     width : 300px;  
@@ -358,7 +366,7 @@ button:hover{
 #ingenieur {
     background-color : rgb(28, 204, 28); 
     width : 200px; 
-    height : 50px;  
+    height : 80px; 
 } 
 
 #ingenieur p { 
@@ -367,7 +375,7 @@ button:hover{
 
 #masterinformatique { 
     background-color : rgb(9, 148, 9); 
-    height : 50px;  
+    height : 80px; 
 }
 /* -------- Page 4 -------- */
 
