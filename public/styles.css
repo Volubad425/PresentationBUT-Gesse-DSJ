@@ -524,6 +524,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-shadow: white 1px 0 10px;
 }
 
 #footer_texte {
