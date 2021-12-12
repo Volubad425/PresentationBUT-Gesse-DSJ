@@ -87,13 +87,8 @@ header #fond_image{
 
 /* ------- Ensemble des pages ------- */
 
-#sommaire{
-    margin: 40px 30px 0px;
-    padding: 20px 30px 20px;
-}
-
-#contenu_page{
-    margin: 40px 30px 40px;
+#contenu_page, #sommaire{
+    margin: 40px 150px 40px;
     padding: 20px 30px 30px;
 }
 
@@ -171,7 +166,7 @@ label p{
 input{
     color: white;
     width: 100%;
-    height: 40px;
+    height: 15px;
     margin-bottom: 10px;
     padding: 10px;
     border: 2px solid white;
@@ -222,6 +217,35 @@ button:hover{
     color:black;
     background-color: white;
     border: white 2px solid;
+}
+
+#page_professionnels {
+    margin-top: 20px; 
+    background-color : rgb(214, 214, 16); 
+    text-align : center; 
+    font-family: "JosefinSans-Medium", sans-serif;
+    text-shadow: white 1px 0 10px; 
+    padding: 10px;
+}
+
+#boutton_blanc{
+    margin-bottom: 15px;
+}
+
+#boutton_blanc a {
+    width: 15px;
+    height: 4px;
+    padding: 10px; 
+    background-color : white; 
+    text-decoration : none; 
+    color : black; 
+    border-radius: 5px;
+}
+
+#boutton_blanc a:hover{
+    background-color: black;
+    color: white;
+    text-shadow: none;
 }
 
 /* -------- Page 1 -------- */
@@ -434,22 +458,6 @@ button:hover{
     display : flex; 
 } 
 
-#page_professionnels { 
-    background-color : rgb(214, 214, 16); 
-    text-align : center; 
-    font-family: "JosefinSans-Light", sans-serif;
-    text-shadow: white 1px 0 10px; 
-} 
-
-button { 
-    background-color : white; 
-} 
-
-#page_professionnels a { 
-    text-decoration : none; 
-    color : black; 
-}
-
 /* -------- Page 4 -------- */
 
 #case1, #case2{
@@ -569,6 +577,7 @@ footer{
 
 #footer_texte li a:hover{
     color: red;
+    text-shadow: red 1px 0 10px;
 }
 
 #footer_texte p{
