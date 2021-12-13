@@ -88,7 +88,7 @@ header #fond_image{
 /* ------- Ensemble des pages ------- */
 
 #contenu_page, #sommaire{
-    margin: 40px 150px 40px;
+    margin: 40px 300px 40px;
     padding: 20px 30px 30px;
 }
 
@@ -165,7 +165,7 @@ label p{
 
 input{
     color: white;
-    width: 100%;
+    width: 95%;
     height: 15px;
     margin-bottom: 10px;
     padding: 10px;
@@ -177,7 +177,7 @@ input{
 
 textarea{
     color: white;
-    width: 100%;
+    width: 95%;
     height: 100px;
     padding: 5px;
     margin-bottom: 20px;
@@ -251,7 +251,13 @@ button:hover{
 #fleche{
     position: fixed;
         right: 15px;
-        top: 15px;
+        bottom: 15px;
+        opacity: 20%;
+}
+
+#fleche:hover{
+    transition: 2s;
+    opacity: 100%;
 }
 
 #fleche img{
