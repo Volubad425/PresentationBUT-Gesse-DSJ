@@ -85,10 +85,10 @@ header #fond_image{
     text-shadow: red 1px 0 10px;
 }
 
-/* ------- Ensemble des pages ------- */
+/* ------- Commun ------- */
 
 #contenu_page, #sommaire{
-    margin: 40px 200px 40px;
+    margin: 40px 100px 40px;
     padding: 20px 30px 30px;
 }
 
@@ -159,13 +159,21 @@ label {
     font-family: "JosefinSans-Medium", sans-serif;
 }
 
+#input_file{
+    border:none;
+}
+
+#contact{
+    width: 90%;
+}
+
 label p{
     margin: 2px;
 }
 
 input{
     color: white;
-    width: 95%;
+    width: 100%;
     height: 15px;
     margin-bottom: 10px;
     padding: 10px;
@@ -177,7 +185,7 @@ input{
 
 textarea{
     color: white;
-    width: 95%;
+    width: 100%;
     height: 100px;
     padding: 5px;
     margin-bottom: 20px;
@@ -292,109 +300,7 @@ button:hover{
     text-shadow: black 2px;
 }
 
-/* -------- Page 2 -------- */ 
-
-#page h1 { 
-    border-bottom: solid 4px #C34444; 
-}
-
-#page h2 { 
-    border-bottom: solid 4px #8851F5;
-} 
-
-#page h3 { 
-    border-bottom: solid 4px #18bb3c; 
-} 
-
-#page table {
-    border-collapse : collapse; 
-    border : 2px solid white;
-    font-family: "JosefinSans-Medium", sans-serif; 
-} 
-
-#page td {
-    border : 1px solid white; 
-    padding: 7px;
-} 
-
-#plus {
-    color : green; 
-    font-weight: bold;
-}
-
-#moyen {
-    color : orange; 
-    font-weight: bold;
-} 
-
-#peu {
-    color : red; 
-    font-weight: bold;
-} 
-
-/* -------- Page 3 -------- */ 
-
-#personne1, #personne2 { 
-    background-color : #403584;  
-    border-radius : 30px 30px 30px 30px; 
-    margin-left : 5px; 
-    width : 450px;  
-    height : 300px;  
-    margin-top : 0px; 
-} 
-
-#personne1 h2, #personne2 h2 {
-    border-bottom : solid 0px black; 
-    margin-bottom : 0px; 
-    margin-left : 10px; 
-    font-size : 25px; 
-
-} 
-
-#personne1 h3, #personne2 h3 {
-    border-bottom : solid 0px black; 
-    font-size : 10px; 
-    margin-bottom : 0px; 
-} 
-
-#personne1 #titre, #personne2 #titre { 
-    display  : flex; 
-} 
-
-#personne1 img, #personne2 img { 
-    width : 200px; 
-    margin-left : 10px; 
-
-} 
-
-#personne1 #contenu, #personne2 #contenu {
-    display : flex; 
-    flex-direction : column; 
-} 
-
-#personne1 #contenu img, #personne2 #contenu img { 
-    width : 50px;  
-    margin-top : 10px; 
-    margin-left : 10px; 
-}
-
-#personne1 cite, #personne2 cite {
-    margin-bottom : 10px;  
-    text-align : center; 
-} 
-
-
-#personne2 {
-    margin-left : 60%; 
-} 
-
-#contenu_note {
-    display : flex; 
-}
-
-#contenu_page3 {
-    display : flex; 
-} 
+/* -------- Page 2 -------- */
 
 #tableau { 
     display : flex;
@@ -472,6 +378,151 @@ button:hover{
 } 
 
 #deuxsempresentiels { 
+    display : flex; 
+} 
+
+#page h1 { 
+    border-bottom: solid 4px #C34444; 
+}
+
+#page h2 { 
+    border-bottom: solid 4px #8851F5;
+} 
+
+#page h3 { 
+    border-bottom: solid 4px #18bb3c; 
+} 
+
+#page table {
+    border-collapse : collapse; 
+    border : 2px solid white;
+    font-family: "JosefinSans-Medium", sans-serif; 
+} 
+
+#page td {
+    border : 1px solid white; 
+    padding: 7px;
+} 
+
+#plus {
+    color : green; 
+    font-weight: bold;
+}
+
+#moyen {
+    color : orange; 
+    font-weight: bold;
+} 
+
+#peu {
+    color : red; 
+    font-weight: bold;
+} 
+
+/* -------- Page 3 -------- */ 
+
+#liste_temoignages{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#personne1, #personne2 { 
+    border: limegreen 2px solid;
+    border-radius : 30px; 
+    width : 60%;  
+    height : 300px;
+    padding: 10px;
+    box-shadow: 0px 0px 6px 2px limegreen;
+}
+
+#personne1{
+    margin-bottom: 30px;
+}
+
+#personne2{
+    margin-top: 30px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+#contenu_titre{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#contenu_titre #image{
+    border: 5px solid white;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+}
+
+#contenu_titre img{
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+}
+
+#contenu_titre .nom{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+#contenu_titre .etablissement{
+    margin-top: 0px;
+    font-size: 12px;
+    font-style: italic;
+    font-family: "ZillaSlab-Medium", sans-serif;
+}
+
+#contenu_note{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 15px 0px 15px;
+}
+
+#contenu_note p{
+    margin: 0px;
+}
+
+#contenu_note img { 
+    width : 64px;
+    height: 15px; 
+    margin-left : 10px; 
+
+} 
+
+#contenu{
+    display : flex; 
+    flex-direction : column; 
+    justify-content: flex-start;
+} 
+
+#contenu img{ 
+    width : 25px;  
+    margin-top : 10px; 
+    margin-left : 10px; 
+}
+
+#contenu .guillemets_reverse{
+    align-self: flex-end;
+}
+
+#personne1 cite, #personne2 cite {
+    margin-bottom : 10px;  
+    text-align : center; 
+} 
+
+#contenu_note {
+    display : flex; 
+}
+
+#contenu_page3 {
     display : flex; 
 } 
 
