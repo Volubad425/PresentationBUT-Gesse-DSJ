@@ -1,874 +1,815 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" role="document">
     <head>
         <title>Liste des IUT</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="page">
-            <!------- En-tête ------->
-            <div id="header">
-                <header>
-                    <div id="fond_bleu">
-                        <p>< BUT class="Informatique" /></p>
+        <main role="main">
+            <div id="page">
+                <!------- En-tête ------->
+                <div id="header">
+                    <header role="banner">
+                        <div id="fond_bleu">
+                            <p role="heading" aria-level="1">< BUT class="Informatique" /></p>
+                        </div>
+                        <div id="fond_image"></div>
+                    </header>
+                    <nav role="navigation">
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="page2_qu'est_ce_que_le_but.html" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="page4_A_propos_de_nous.html" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="#" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="page6_contact.html" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!---- Contenu de la page (à changer en fonction de la page) ---->
+                <div id = "page_professionnels" > 
+                    <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
+    
+                    <div id="boutton_blanc"> 
+                        <a href = "page7_profils.html" role="button">Aller sur la page</a>
                     </div>
-                    <div id="fond_image"></div>
-                </header>
-                <nav>
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="page2_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="page4_A_propos_de_nous.html">A propos de nous</a></li>
-                        <li><a href="#">Liste des IUT</a></li>
-                        <li><a href="page6_contact.html">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
+                </div>
+    
+                <div id="sommaire" class="bordure">
+                    <h1 role="heading" aria-level="2">Sommaire</h1>
+                    <ul role="list">
+                        <li role="listitem"><a href="#titre_1" role="link">Liste des IUT proposant la formation</a></li>
+                        <ul role="list">
+                            <li role="listitem"><a href="#no1" role="link">IUT Lyon 1</a></li>
+                            <li role="listitem"><a href="#no2" role="link">IUT de Valence</a></li>
+                            <li role="listitem"><a href="#no3" role="link">IUT 2 de Grenoble</a></li>
+                            <li role="listitem"><a href="#no4" role="link">IUT d'Annecy</a></li>
+                            <li role="listitem"><a href="#no5" role="link">IUT de Nice</a></li>
+                            <li role="listitem"><a href="#no6" role="link">IUT Aix-Marseille</a></li>
+                            <li role="listitem"><a href="#no7" role="link">IUT de Montpellier</a></li>
+                            <li role="listitem"><a href="#no8" role="link">IUT de Toulouse</a></li>
+                            <li role="listitem"><a href="#no9" role="link">IUT de Blagnac</a></li>
+                            <li role="listitem"><a href="#no10" role="link">IUT de Bayonne</a></li>
+                            <li role="listitem"><a href="#no11" role="link">IUT de Bordeaux</a></li>
+                            <li role="listitem"><a href="#no12" role="link">IUT La Rochelle</a></li>
+                            <li role="listitem"><a href="#no13" role="link">IUT de Nantes</a></li>
+                            <li role="listitem"><a href="#no14" role="link">IUT de Vannes</a></li>
+                            <li role="listitem"><a href="#no15" role="link">IUT de Lannion</a></li>
+                            <li role="listitem"><a href="#no16" role="link">IUT de Laval</a></li>
+                            <li role="listitem"><a href="#no17" role="link">IUT Grand Ouest Normandie</a></li>
+                            <li role="listitem"><a href="#no18" role="link">IUT du Havre</a></li>
+                            <li role="listitem"><a href="#no19" role="link">IUT d'Amiens</a></li>
+                            <li role="listitem"><a href="#no20" role="link">IUT Littoral</a></li>
+                            <li role="listitem"><a href="#no21" role="link">IUT A de Lille</a></li>
+                            <li role="listitem"><a href="#no22" role="link">IUT de Lens</a></li>
+                            <li role="listitem"><a href="#no23" role="link">IUT de Valenciennes</a></li>
+                            <li role="listitem"><a href="#no24" role="link">IUT de Reims-Châlons-Charleville</a></li>
+                            <li role="listitem"><a href="#no25" role="link">IUT de Metz</a></li>
+                            <li role="listitem"><a href="#no26" role="link">IUT Nancy-Charlemagne</a></li>
+                            <li role="listitem"><a href="#no27" role="link">IUT d'Illkirch</a></li>
+                            <li role="listitem"><a href="#no28" role="link">IUT de Saint-Dié</a></li>
+                            <li role="listitem"><a href="#no29" role="link">IUT de Belfort-Monbéliard</a></li>
+                            <li role="listitem"><a href="#no30" role="link">IUT de Dijon</a></li>
+                            <li role="listitem"><a href="#no31" role="link">IUT de Villetaneuse</a></li>
+                            <li role="listitem"><a href="#no32" role="link">IUT de Montreuil</a></li>
+                            <li role="listitem"><a href="#no33" role="link">IUT de Marne la Vallée</a></li>
+                            <li role="listitem"><a href="#no34" role="link">IUT de Paris Decartes</a></li>
+                            <li role="listitem"><a href="#no35" role="link">IUT de Vezily</a></li>
+                            <li role="listitem"><a href="#no36" role="link">IUT d'Orsay</a></li>
+                            <li role="listitem"><a href="#no37" role="link">IUT de Sénart/Fontainebleau</a></li>
+                            <li role="listitem"><a href="#no38" role="link">IUT d'Orleans</a></li>
+                            <li role="listitem"><a href="#no39" role="link">IUT de Clermont-Ferrand</a></li>
+                            <li role="listitem"><a href="#no40" role="link">IUT du Limousin</a></li>
+                            <li role="listitem"><a href="#no41" role="link">IUT de Rodez</a></li>
+                        </ul>
                     </ul>
-                </nav>
-            </div>
-            <!---- Contenu de la page (à changer en fonction de la page) ---->
-            <div id = "page_professionnels" > 
-                <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
-
-                <div id="boutton_blanc"> 
-                    <a href = "page7_aide.html" >Aller sur la page</a>
                 </div>
-            </div>
-
-            <div id="sommaire" class="bordure">
-                <h1>Sommaire</h1>
-                <ul>
-                    <li><a href="#titre_1">Liste des IUT proposant la formation</a></li>
-                    <ul>
-                        <li><a href="#no1">IUT Lyon 1</a></li>
-                        <li><a href="#no2">IUT de Valence</a></li>
-                        <li><a href="#no3">IUT 2 de Grenoble</a></li>
-                        <li><a href="#no4">IUT d'Annecy</a></li>
-                        <li><a href="#no5">IUT de Nice</a></li>
-                        <li><a href="#no6">IUT Aix-Marseille</a></li>
-                        <li><a href="#no7">IUT de Montpellier</a></li>
-                        <li><a href="#no8">IUT de Toulouse</a></li>
-                        <li><a href="#no9">IUT de Blagnac</a></li>
-                        <li><a href="#no10">IUT de Bayonne</a></li>
-                        <li><a href="#no11">IUT de Bordeaux</a></li>
-                        <li><a href="#no12">IUT La Rochelle</a></li>
-                        <li><a href="#no13">IUT de Nantes</a></li>
-                        <li><a href="#no14">IUT de Vannes</a></li>
-                        <li><a href="#no15">IUT de Lannion</a></li>
-                        <li><a href="#no16">IUT de Laval</a></li>
-                        <li><a href="#no17">IUT Grand Ouest Normandie</a></li>
-                        <li><a href="#no18">IUT du Havre</a></li>
-                        <li><a href="#no19">IUT d'Amiens</a></li>
-                        <li><a href="#no20">IUT Littoral</a></li>
-                        <li><a href="#no21">IUT A de Lille</a></li>
-                        <li><a href="#no22">IUT de Lens</a></li>
-                        <li><a href="#no23">IUT de Valenciennes</a></li>
-                        <li><a href="#no24">IUT de Reims-Châlons-Charleville</a></li>
-                        <li><a href="#no25">IUT de Metz</a></li>
-                        <li><a href="#no26">IUT Nancy-Charlemagne</a></li>
-                        <li><a href="#no27">IUT d'Illkirch</a></li>
-                        <li><a href="#no28">IUT de Saint-Dié</a></li>
-                        <li><a href="#no29">IUT de Belfort-Monbéliard</a></li>
-                        <li><a href="#no30">IUT de Dijon</a></li>
-                        <li><a href="#no31">IUT de Villetaneuse</a></li>
-                        <li><a href="#no32">IUT de Montreuil</a></li>
-                        <li><a href="#no33">IUT de Marne la Vallée</a></li>
-                        <li><a href="#no34">IUT de Paris Decartes</a></li>
-                        <li><a href="#no35">IUT de Vezily</a></li>
-                        <li><a href="#no36">IUT d'Orsay</a></li>
-                        <li><a href="#no37">IUT de Sénart/Fontainebleau</a></li>
-                        <li><a href="#no38">IUT d'Orleans</a></li>
-                        <li><a href="#no39">IUT de Clermont-Ferrand</a></li>
-                        <li><a href="#no40">IUT du Limousin</a></li>
-                        <li><a href="#no41">IUT de Rodez</a></li>
-                    </ul>
-                </ul>
-            </div>
-            <div id="contenu_page" class="bordure">
-                <h1 id="titre_1">Liste des IUT proposant la formation</h1>
-                <div id="liste_sites_iut">
-                    <div id="no1">
-                        <h2>IUT Lyon 1</h2>
-                        <div id="iut_images">
-                            <img src="images/iut lyon 1 site villeurbanne doua.jpg" alt="IUT Lyon 1 site Villeurbanne Doua">
-                            <img src="images/iut lyon 1 site bourg en bresse.jpg" alt="IUT Lyon 1 site Bourg-en-Bresse">
-                        </div>
-                        <div id="square">
-                            <p>Site Villeurbanne Doua (Villeurbanne - 69)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                <div id="contenu_page" class="bordure">
+                    <h1 id="titre_1" role="heading" aria-level="2">Liste des IUT proposant la formation</h1>
+                    <div id="liste_sites_iut">
+                        <div id="no1">
+                            <h2 role="heading" aria-level="3">IUT Lyon 1</h2>
+                            <div id="iut_images">
+                                <img src="images/iut lyon 1 site villeurbanne doua.jpg" alt="IUT Lyon 1 site Villeurbanne Doua" role="img">
+                                <img src="images/iut lyon 1 site bourg en bresse.jpg" alt="IUT Lyon 1 site Bourg-en-Bresse" role="img">
                             </div>
-                            <p>Site Bourg-en-Bresse (Bourg-en-Bresse - 01)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-									<li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
+                            <div id="square">
+                                <p>Site Villeurbanne Doua (Villeurbanne - 69)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                                <p>Site Bourg-en-Bresse (Bourg-en-Bresse - 01)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no2">
-                        <h2>IUT de Valence</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de valence.jpg" alt="IUT de Valence">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Valence - 26)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no2">
+                            <h2 role="heading" aria-level="3">IUT de Valence</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de valence.jpg" alt="IUT de Valence" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Valence - 26)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no3">
-                        <h2>IUT 2 de Grenoble</h2>
-                        <div id="iut_images">
-                            <img src="images/iut 2 de grenoble.jpg" alt="IUT 2 de Grenoble">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Grenoble - 38)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                </ul>
+                        <div id="no3">
+                            <h2 role="heading" aria-level="3">IUT 2 de Grenoble</h2>
+                            <div id="iut_images">
+                                <img src="images/iut 2 de grenoble.jpg" alt="IUT 2 de Grenoble" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Grenoble - 38)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no4">
-                        <h2>IUT d'Annecy</h2>
-                        <div id="iut_images">
-                            <img src="images/iut d'annecy.jpg" alt="IUT d'Annecy">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Annecy - 74)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no4">
+                            <h2 role="heading" aria-level="3">IUT d'Annecy</h2>
+                            <div id="iut_images">
+                                <img src="images/iut d'annecy.jpg" alt="IUT d'Annecy" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Annecy - 74)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no5">
-                        <h2>IUT de Nice</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de nice.jpg" alt="IUT de Nice">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Nice - 06)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                </ul>
+                        <div id="no5">
+                            <h2 role="heading" aria-level="3">IUT de Nice</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de nice.jpg" alt="IUT de Nice" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Nice - 06)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no6">
-                        <h2>IUT Aix-Marseille</h2>
-                        <div id="iut_images">
-                            <img src="images/iut aix marseille site aix en provence.jpg" alt="IUT Aix-Marseille site d'Aix-En-Provence">
-                            <img src="images/iut aix marseille site arles.jpg" alt="IUT Aix-Marseille site d'Arles">
-                        </div>
-                        <div id="square">
-                            <p>Site d'Aix-En-Provence (Aix-En-Provence - 13)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                </ul>
+                        <div id="no6">
+                            <h2 role="heading" aria-level="3">IUT Aix-Marseille</h2>
+                            <div id="iut_images">
+                                <img src="images/iut aix marseille site aix en provence.jpg" alt="IUT Aix-Marseille site d'Aix-En-Provence" role="img">
+                                <img src="images/iut aix marseille site arles.jpg" alt="IUT Aix-Marseille site d'Arles" role="img">
                             </div>
-                            <p>Site d'Arles (Arles - 13)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no7">
-                        <h2>IUT de Montpellier-Sète</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de montpellier.jpg" alt="IUT de Montpellier-Sète">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Montpellier - 34)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
+                            <div id="square">
+                                <p>Site d'Aix-En-Provence (Aix-En-Provence - 13)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                    </ul>
+                                </div>
+                                <p>Site d'Arles (Arles - 13)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no8">
-                        <h2>IUT de Toulouse</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de toulouse paul sabatier.jpg" alt="IUT Paul Sabatier de Toulouse">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Toulouse - 31)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no7">
+                            <h2 role="heading" aria-level="3">IUT de Montpellier-Sète</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de montpellier.jpg" alt="IUT de Montpellier-Sète" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Montpellier - 34)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no9">
-                        <h2>IUT de Blagnac</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de blagnac.jpg" alt="IUT de Blagnac">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Blagnac - 31)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no8">
+                            <h2 role="heading" aria-level="3">IUT de Toulouse</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de toulouse paul sabatier.jpg" alt="IUT Paul Sabatier de Toulouse" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Toulouse - 31)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no10">
-                        <h2>IUT de Bayonne</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de bayonne site anglet.jpg" alt="IUT de Bayonne site d'Anglet">
-                        </div>
-                        <div id="square">
-                            <p>Site d'Anglet (Anglet - 64)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d’applications (conception, développement, validation)</li>
-                                    <li>Déploiement, intégration d’applications et management du système d’information</li>
-                                </ul>
-
+                        <div id="no9">
+                            <h2 role="heading" aria-level="3">IUT de Blagnac</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de blagnac.jpg" alt="IUT de Blagnac" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Blagnac - 31)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no11">
-                        <h2>IUT de Bordeaux</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de bordeaux.jpg" alt="IUT de Bordeaux site de Gradignan">
-                        </div>
-                        <div id="square">
-                            <p>Site de Gradignan (Gradignan - 33)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d’applications : conception, développement, validation</li>
-                                    <li>Déploiement, intégration d’applications et management du système d'information</li>
-                                </ul>
+                        <div id="no10">
+                            <h2 role="heading" aria-level="3">IUT de Bayonne</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de bayonne site anglet.jpg" alt="IUT de Bayonne site d'Anglet" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site d'Anglet (Anglet - 64)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d’applications (conception, développement, validation)</li>
+                                        <li role="listitem">Déploiement, intégration d’applications et management du système d’information</li>
+                                    </ul>
+    
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no12">
-                        <h2>IUT La Rochelle</h2>
-                        <div id="iut_images">
-                            <img src="images/iut la rochelle.jpg" alt="IUT La Rochelle">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (La Rochelle - 17)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                </ul>
+                        <div id="no11">
+                            <h2 role="heading" aria-level="3">IUT de Bordeaux</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de bordeaux.jpg" alt="IUT de Bordeaux site de Gradignan" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site de Gradignan (Gradignan - 33)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d’applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d’applications et management du système d'information</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no13">
-                        <h2>IUT de Nantes</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de nantes site carquefou.jpg" alt="IUT de Nantes site de Carquefou">
-                        </div>
-                        <div id="square">
-                            <p>Site de Carquefou (Carquefou - 44)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no12">
+                            <h2 role="heading" aria-level="3">IUT La Rochelle</h2>
+                            <div id="iut_images">
+                                <img src="images/iut la rochelle.jpg" alt="IUT La Rochelle" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (La Rochelle - 17)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no14">
-                        <h2>IUT de Vannes</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de vannes.jpg" alt="IUT de Vannes">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Vannes - 56)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no13">
+                            <h2 role="heading" aria-level="3">IUT de Nantes</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de nantes site carquefou.jpg" alt="IUT de Nantes site de Carquefou" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site de Carquefou (Carquefou - 44)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no15">
-                        <h2>IUT de Lannion</h2>
-                        <div id="iut_images">
-                            <img src="images/iut de lannion.jpg" alt="IUT de Lannion">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Lannion - 22)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no14">
+                            <h2 role="heading" aria-level="3">IUT de Vannes</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de vannes.jpg" alt="IUT de Vannes" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Vannes - 56)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no16">
-                        <h2>IUT Laval</h2>
-                        <div id="iut_images">
-                            <img src="images/iut laval.jpg" alt="IUT Laval">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Laval - 53)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                </ul>
+                        <div id="no15">
+                            <h2 role="heading" aria-level="3">IUT de Lannion</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de lannion.jpg" alt="IUT de Lannion" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Lannion - 22)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no17">
-                        <h2>IUT Grand Ouest Normandie</h2>
-                        <div id="iut_images">
-                            <img src="images/iut grand ouest normandie site ifs.jpg" alt="IUT Grand Ouest Normandie site d'Ifs">
-                        </div>
-                        <div id="square">
-                            <p>Site d'Ifs (Caen - 14)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no16">
+                            <h2 role="heading" aria-level="3">IUT Laval</h2>
+                            <div id="iut_images">
+                                <img src="images/iut laval.jpg" alt="IUT Laval" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Laval - 53)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no18">
-                        <h2>IUT Le Havre</h2>
-                        <div id="iut_images">
-                            <img src="images/iut le havre.jpg" alt="IUT Le Havre">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Le Havre - 76)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                </ul>
+                        <div id="no17">
+                            <h2 role="heading" aria-level="3">IUT Grand Ouest Normandie</h2>
+                            <div id="iut_images">
+                                <img src="images/iut grand ouest normandie site ifs.jpg" alt="IUT Grand Ouest Normandie site d'Ifs" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site d'Ifs (Caen - 14)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no19">
-                        <h2>IUT d'Amiens</h2>
-                        <div id="iut_images">
-                            <img src="images/iut d'amiens.jpg" alt="IUT d'Amiens">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Amiens - 80)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
+                        <div id="no18">
+                            <h2 role="heading" aria-level="3">IUT Le Havre</h2>
+                            <div id="iut_images">
+                                <img src="images/iut le havre.jpg" alt="IUT Le Havre" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Le Havre - 76)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no20">
-                        <h2>IUT Littoral Côte d'Opale</h2>
-                        <div id="iut_images">
-                            <img src="images/iut littoral.jpg" alt="IUT Littoral Côte d'Opale site Calais">
-                        </div>
-                        <div id="square">
-                            <p>Site Calais (Calais - 62)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                </ul>
+                        <div id="no19">
+                            <h2 role="heading" aria-level="3">IUT d'Amiens</h2>
+                            <div id="iut_images">
+                                <img src="images/iut d'amiens.jpg" alt="IUT d'Amiens" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Amiens - 80)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no21">
-                        <h2>IUT A de Lille</h2>
-                        <div id="iut_images">
-                            <img src="images/iut a de lille.jpg" alt="IUT A de Lille">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Villeneuve-d'Ascq - 59)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                </ul>
+                        <div id="no20">
+                            <h2 role="heading" aria-level="3">IUT Littoral Côte d'Opale</h2>
+                            <div id="iut_images">
+                                <img src="images/iut littoral.jpg" alt="IUT Littoral Côte d'Opale site Calais" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site Calais (Calais - 62)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no22">
-                        <h2>IUT de Lens</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "http://www.iut-lens.univ-artois.fr/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut de lens.jpg" alt="IUT de Lens">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Lens - 62)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d’applications : conception, développement, validation</li>
-                                    <li>Déploiement d’applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no21">
+                            <h2 role="heading" aria-level="3">IUT A de Lille</h2>
+                            <div id="iut_images">
+                                <img src="images/iut a de lille.jpg" alt="IUT A de Lille" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Villeneuve-d'Ascq - 59)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no23">
-                        <h2>IUT de Valenciennes</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://www.uphf.fr/IUT/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut de valenciennes site maubeuge.jpg" alt="IUT de Valenciennes site de Maubeuge">
-                        </div>
-                        <div id="square">
-                            <p>Site de Maubeuge (Maubeuge - 59)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d’applications: conception, développement, validation</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
+                        <div id="no22">
+                            <h2 role="heading" aria-level="3">IUT de Lens</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de lens.jpg" alt="IUT de Lens" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Lens - 62)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d’applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d’applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no24">
-                        <h2>IUT de Reims-Châlons-Charleville</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://www.iut-rcc.fr/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut reims-chalons-charleville site charleville.jpg" alt="IUT de Reims-Châlons-Charleville site de Charleville">
-                        </div>
-                        <div id="square">
-                            <p>Site de Charleville (Charleville-Mézières - 51)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no23">
+                            <h2 role="heading" aria-level="3">IUT de Valenciennes</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de valenciennes site maubeuge.jpg" alt="IUT de Valenciennes site de Maubeuge" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site de Maubeuge (Maubeuge - 59)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d’applications: conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no25">
-                        <h2>IUT de Metz</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "http://iut-metz.univ-lorraine.fr/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut de metz.jpg" alt="IUT de Metz">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Metz - 57)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
+                        <div id="no24">
+                            <h2 role="heading" aria-level="3">IUT de Reims-Châlons-Charleville</h2>
+                            <div id="iut_images">
+                                <img src="images/iut reims-chalons-charleville site charleville.jpg" alt="IUT de Reims-Châlons-Charleville site de Charleville" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site de Charleville (Charleville-Mézières - 51)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no26">
-                        <h2>IUT Nancy-Charlemagne</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iut-charlemagne.univ-lorraine.fr/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut nancy charlemagne.jpg" alt="IUT de Nancy-Charlemagne">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Nancy - 57)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
+                        <div id="no25">
+                            <h2 role="heading" aria-level="3">IUT de Metz</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de metz.jpg" alt="IUT de Metz" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Metz - 57)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="no27">
-                        <h2>IUT d'Illkirch</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iutrs.unistra.fr/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut illkirch.jpg" alt="IUT Robert Schuman d'Illkirch">
+                        <div id="no26">
+                            <h2 role="heading" aria-level="3">IUT Nancy-Charlemagne</h2>
+                            <div id="iut_images">
+                                <img src="images/iut nancy charlemagne.jpg" alt="IUT de Nancy-Charlemagne" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Nancy - 57)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div id="square">
-                            <p>Site principal (Illkirch-Graffenstaden - 67)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
+                        <div id="no27">
+                            <h2 role="heading" aria-level="3">IUT d'Illkirch</h2>
+                            <div id="iut_images">
+                                <img src="images/iut illkirch.jpg" alt="IUT Robert Schuman d'Illkirch" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Illkirch-Graffenstaden - 67)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no28">
+                            <h2 role="heading" aria-level="3">IUT Saint-Dié</h2>
+                            <div id="iut_images">
+                                <img src="images/iut saint dié.jpg" alt="IUT Saint-Dié" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Saint-Dié-des-Vosges - 88)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications, conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no29">
+                            <h2 role="heading" aria-level="3">IUT Belfort-Monbéliard</h2>
+                            <div id="iut_images">
+                                <img src="images/iut belfort-montbéliard.jpg" alt="IUT Belfort-Monbéliard" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Belfort - 90)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d’applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no30">
+                            <h2 role="heading" aria-level="3">IUT de Dijon-Auxerre</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de dijon.jpg" alt="IUT de Dijon-Auxerre" role="img">
+                                <img src="images/iut de dijon antenne nevers.jpg" alt="IUT de Dijon-Auxerre antenne de Nevers" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Dijon - 21)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications: conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                                <p>Antenne de Nevers (58)</p>
+                                <ul role="list">
+                                    <li role="listitem">Réalisation d'applications: conception, développement, validation</li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div id="no28">
-                        <h2>IUT Saint-Dié</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iutsd.univ-lorraine.fr/" > Aller sur la page </a>
-                        </div>  
-                        <div id="iut_images">
-                            <img src="images/iut saint dié.jpg" alt="IUT Saint-Dié">
+                        <div id="no31">
+                            <h2 role="heading" aria-level="3">IUT de Villetaneuse</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de villetaneuse.jpg" alt="IUT de Villetaneuse" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Villetaneuse - 93)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d’applications et management du système d’information</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div id="square">
-                            <p>Site principal (Saint-Dié-des-Vosges - 88)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications, conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
+                        <div id="no32">
+                            <h2 role="heading" aria-level="3">IUT de Montreuil</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de montreuil.jpg" alt="IUT de Montreuil" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Montreuil - 93)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <p>Réalisation d'applications : conception, développement, validation</p>
+                                        <p>Administration, gestion et exploitation des données</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no33">
+                            <h2 role="heading" aria-level="3">IUT de Marne la Vallée</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de marne-la-vallée.jpg" alt="IUT de Marne la Vallée" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Champs-sur-Marne - 77)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <p>Réalisation d'applications : conception, développement, validation</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no34">
+                            <h2 role="heading" aria-level="3">IUT de Paris Decartes</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de paris-decartes.jpg" alt="IUT de Paris-Decartes" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Paris 16e Arrondissement - 75)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no35">
+                            <h2 role="heading" aria-level="3">IUT de Vézily</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de vézily.jpg" alt="IUT de Vézily" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Vézily-Villacoublay - 78)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no36">
+                            <h2 role="heading" aria-level="3">IUT d'Orsay</h2>
+                            <div id="iut_images">
+                                <img src="images/iut d'orsay.jpg" alt="IUT de d'Orsay" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Gif-sur-Yvette - 91)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no37">
+                            <h2 role="heading" aria-level="3">IUT Sénart-Fontainebleau</h2>
+                            <div id="iut_images">
+                                <img src="images/iut sénart-fontainebleau.jpg" alt="IUT Sénart-Fontainebleau site Sénart" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site Sénart (Lieusaint - 77)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no38">
+                            <h2 role="heading" aria-level="3">IUT d'Orléans</h2>
+                            <div id="iut_images">
+                                <img src="images/iut d'orléans.jpg" alt="IUT d'Orléans" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Orléans - 45)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement d'applications communicantes et sécurisées</li>
+                                        <li role="listitem">Administration, gestion et exploitation des données</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no39">
+                            <h2 role="heading" aria-level="3">IUT de Clermont-Ferrand</h2>
+                            <div id="iut_images">
+                                <img src="images/iut de clermont-ferrand.jpg" alt="IUT de Clermont-Ferrand" role="img">
+                                <img src="images/iut de clermont-ferrand antenne du puy.jpg" alt="IUT de Clermont-Ferrand antenne du Puy" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site principal (Aubière - 63)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
+                                <p>Antenne du Puy (Le Puy-en-Velay - 43)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no40">
+                            <h2 role="heading" aria-level="3">IUT du Limousin</h2>
+                            <div id="iut_images">
+                                <img src="images/iut du limousin site de limoges.jpg" alt="IUT du Limousin site de Limoges" role="img">
+                            </div>
+                            <div id="square">
+                                <p>Site de Limoges (Limoges - 87)</p>
+                                <ul role="list">
+                                    <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div id="no29">
-                        <h2>IUT Belfort-Monbéliard</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "http://www.iut-bm.univ-fcomte.fr/" > Aller sur la page </a>
-                        </div>    
-                        <div id="iut_images">
-                            <img src="images/iut belfort-montbéliard.jpg" alt="IUT Belfort-Monbéliard">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Belfort - 90)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d’applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
+                        <div id="no41">
+                            <h2 role="heading" aria-level="3">IUT Rodez</h2>
+                            <div id="iut_images">
+                                <img src="images/iut rodez.jpg" alt="IUT Rodez" role="img">
                             </div>
-                        </div>
-                    </div>
-                    <div id="no30">
-                        <h2>IUT de Dijon-Auxerre</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iutdijon.u-bourgogne.fr/www/" > Aller sur la page </a>
-                        </div>   
-                        <div id="iut_images">
-                            <img src="images/iut de dijon.jpg" alt="IUT de Dijon-Auxerre">
-                            <img src="images/iut de dijon antenne nevers.jpg" alt="IUT de Dijon-Auxerre antenne de Nevers">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Dijon - 21)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications: conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
-                            </div>
-                            <p>Antenne de Nevers (58)</p>
-                            <ul>
-                                <li>Réalisation d'applications: conception, développement, validation</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="no31">
-                        <h2>IUT de Villetaneuse</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iutv.univ-paris13.fr/" > Aller sur la page </a>
-                        </div>  
-                        <div id="iut_images">
-                            <img src="images/iut de villetaneuse.jpg" alt="IUT de Villetaneuse">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Villetaneuse - 93)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement, intégration d’applications et management du système d’information</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no32">
-                        <h2>IUT de Montreuil</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://www.iut.univ-paris8.fr/" > Aller sur la page </a>
-                        </div>  
-                        <div id="iut_images">
-                            <img src="images/iut de montreuil.jpg" alt="IUT de Montreuil">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Montreuil - 93)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <p>Réalisation d'applications : conception, développement, validation</p>
-                                    <p>Administration, gestion et exploitation des données</p>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no33">
-                        <h2>IUT de Marne la Vallée</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iut.univ-gustave-eiffel.fr//" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut de marne-la-vallée.jpg" alt="IUT de Marne la Vallée">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Champs-sur-Marne - 77)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <p>Réalisation d'applications : conception, développement, validation</p>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no34">
-                        <h2>IUT de Paris Decartes</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iutparis-seine.u-paris.fr/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut de paris-decartes.jpg" alt="IUT de Paris-Decartes">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Paris 16e Arrondissement - 75)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no35"> 
-                        <h2>IUT de Vézily</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "www.iut-velizy-rambouillet.uvsq.fr" > Aller sur la page </a>
-                        </div>  
-                        <div id="iut_images">
-                            <img src="images/iut de vézily.jpg" alt="IUT de Vézily">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Vézily-Villacoublay - 78)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no36">
-                        <h2>IUT d'Orsay</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://www.iut-orsay.universite-paris-saclay.fr/" > Aller sur la page </a>
-                        </div>  
-                        <div id="iut_images">
-                            <img src="images/iut d'orsay.jpg" alt="IUT de d'Orsay">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Gif-sur-Yvette - 91)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no37">
-                        <h2>IUT Sénart-Fontainebleau</h2>
-                        <div id="boutton_blanc"> 
-                            <a href = "https://www.iutsf.u-pec.fr/" > Aller sur la page </a>
-                        </div> 
-                         
-                        <div id="iut_images">
-                            <img src="images/iut sénart-fontainebleau.jpg" alt="IUT Sénart-Fontainebleau site Sénart">
-                        </div>
-                        <div id="square">
-                            <p>Site Sénart (Lieusaint - 77)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no38">
-                        <h2>IUT d'Orléans</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://www.univ-orleans.fr/fr/iut-orleans" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut d'orléans.jpg" alt="IUT d'Orléans">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Orléans - 45)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement d'applications communicantes et sécurisées</li>
-                                    <li>Administration, gestion et exploitation des données</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no39">
-                        <h2>IUT de Clermont-Ferrand</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iut.uca.fr/" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut de clermont-ferrand.jpg" alt="IUT de Clermont-Ferrand">
-                            <img src="images/iut de clermont-ferrand antenne du puy.jpg" alt="IUT de Clermont-Ferrand antenne du Puy">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Aubière - 63)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
-                            </div>
-                            <p>Antenne du Puy (Le Puy-en-Velay - 43)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="no40">
-                        <h2>IUT du Limousin</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://iut.unilim.fr" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut du limousin site de limoges.jpg" alt="IUT du Limousin site de Limoges">
-                        </div>
-                        <div id="square">
-                            <p>Site de Limoges (Limoges - 87)</p>
-                            <ul>
-                                <li>Réalisation d'applications : conception, développement, validation</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="no41">
-                        <h2>IUT Rodez</h2> 
-                        <div id="boutton_blanc"> 
-                            <a href = "https://www.iut-rodez.fr/fr" > Aller sur la page </a>
-                        </div> 
-                        <div id="iut_images">
-                            <img src="images/iut rodez.jpg" alt="IUT Rodez">
-                        </div>
-                        <div id="square">
-                            <p>Site principal (Rodez - 12)</p>
-                            <div id="desc">
-                                <p>Parcours : </p>
-                                <ul>
-                                    <li>Réalisation d'applications : conception, développement, validation</li>
-                                    <li>Déploiement, intégration d'applications et management du système d’information</li>
-                                </ul>
+                            <div id="square">
+                                <p>Site principal (Rodez - 12)</p>
+                                <div id="desc">
+                                    <p>Parcours : </p>
+                                    <ul role="list">
+                                        <li role="listitem">Réalisation d'applications : conception, développement, validation</li>
+                                        <li role="listitem">Déploiement, intégration d'applications et management du système d’information</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div id="fleche">
-                <a href="#"><img src="images/img_109187.png"></a>
-            </div>
-            
-            <!-------- Bas de page -------->
-            <footer>
-                <div id="footer_texte"> 
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="page2_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="page4_A_propos_de_nous.html">A propos de nous</a></li>
-                        <li><a href="#">Liste des IUT</a></li>
-                        <li><a href="page6_contact.html">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
-                    </ul>
-                    <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
+    
+                <div id="fleche">
+                    <a href="#" role="button"><img src="images/img_109187.png" alt="Fleche" role="img"></a>
                 </div>
-                <div id="footer_images">
-                    <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT">
-                    <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT">
-                </div>
-            </footer>
-        </div>
+                
+                <!-------- Bas de page -------->
+                <footer role="contentinfo">
+                    <div id="footer_texte"> 
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="page2_qu'est_ce_que_le_but.html" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="page4_A_propos_de_nous.html" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="#" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="page6_contact.html" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                        <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
+                    </div>
+                    <div id="footer_images">
+                        <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT" role="img">
+                        <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT" role="img">
+                    </div>
+                </footer>
+            </div>
+        </main>
     </body>
 </html>

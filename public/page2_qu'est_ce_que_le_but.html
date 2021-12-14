@@ -1,67 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" role="document">
     <head>
         <title>Qu'est-ce que le BUT ?</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="page">
-            <!------- En-tête ------->
-            <div id="header">
-                <header>
-                    <div id="fond_bleu">
-                        <p>< BUT class="Informatique" /></p>
-                    </div>
-                    <div id="fond_image"></div>
-                </header>
-                <nav>
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="#">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="page4_A_propos_de_nous.html">A propos de nous</a></li>
-                        <li><a href="page5_Liste_des_IUT.html">Liste des IUT</a></li>
-                        <li><a href="page6_contact.html">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!---- Contenu de la page (à changer en fonction de la page) ----> 
-
-            <div id = "page_professionnels" > 
-                <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
-
-                <div id="boutton_blanc"> 
-                    <a href = "page7_aide.html" >Aller sur la page</a>
+        <main role="main">
+            <div id="page">
+                <!------- En-tête ------->
+                <div id="header">
+                    <header role="banner">
+                        <div id="fond_bleu">
+                            <p role="heading" aria-level="1">< BUT class="Informatique" /></p>
+                        </div>
+                        <div id="fond_image"></div>
+                    </header>
+                    <nav role="navigation">
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="#" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="page4_A_propos_de_nous.html" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="page5_Liste_des_IUT.html" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="page6_contact.html" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-            
-            <div id="sommaire" class="bordure">
-                <h1>Sommaire</h1>
-                <ul>
-                    <li><a href="#titre_1">Qu'est ce que le BUT ?</a></li>
-                    <ul>
-                        <li><a href="#titre_2">Histoire</a></li>
-                        <li><a href="#titre_3">Admissions</a></li>
-                        <li><a href="#titre_4">Déroulé de la fomation</a></li>
-                        <ul>
-                            <li><a href="#titre_5">Durée</a></li>
-                            <li><a href="#titre_6">Les cours</a></li>
-                            <li><a href="#titre_7">Les notations</a></li>
-                            <li><a href="#titre_8">Déroulé général de la formation</a></li>
+                <!---- Contenu de la page (à changer en fonction de la page) ----> 
+    
+                <div id = "page_professionnels" > 
+                    <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
+    
+                    <div id="boutton_blanc"> 
+                        <a href = "page7_profils.html" role="button">Aller sur la page</a>
+                    </div>
+                </div>
+                
+                <div id="sommaire" class="bordure">
+                    <h1 role="heading">Sommaire</h1>
+                    <ul role="list">
+                        <li role="listitem"><a href="#titre_1" role="link">Qu'est ce que le BUT ?</a></li>
+                        <ul role="list">
+                            <li role="listitem"><a href="#titre_2" role="link">Histoire</a></li>
+                            <li role="listitem"><a href="#titre_3" role="link">Admissions</a></li>
+                            <li role="listitem"><a href="#titre_4" role="link">Déroulé de la fomation</a></li>
+                            <ul role="list">
+                                <li role="listitem"><a href="#titre_5" role="link">Durée</a></li>
+                                <li role="listitem"><a href="#titre_6" role="link">Les cours</a></li>
+                                <li role="listitem"><a href="#titre_7" role="link">Les notations</a></li>
+                                <li role="listitem"><a href="#titre_8" role="link">Déroulé général de la formation</a></li>
+                            </ul>
+                            <li role="listitem"><a href="#titre_9" role="link">Les activités extra-scolaires</a></li>
+                            <li role="listitem"><a href="#titre_10" role="link">Le diplôme</a></li>
+                            <li role="listitem"><a href="#titre_11" role="link">Les parcours</a></li>
+                            <li role="listitem"><a href="#titre_12" role="link">Débouchés</a></li>
+                            <ul role="list">
+                                <li role="listitem"><a href="#titre_13" role="link">Les poursuites</a></li>
+                                <li role="listitem"><a href="#titre_14" role="link">Quels métiers</a></li>
+                            </ul>
+                            <li role="listitem"><a href="#titre_15" role="link">Prix de la formation</a></li>
+                            <li role="listitem"><a href="#titre_16" role="link">Comparatif avec d'autres formations</a></li>
                         </ul>
-                        <li><a href="#titre_9">Les activités extra-scolaires</a></li>
-                        <li><a href="#titre_10">Le diplôme</a></li>
-                        <li><a href="#titre_11">Les parcours</a></li>
-                        <li><a href="#titre_12">Débouchés</a></li>
-                        <ul>
-                            <li><a href="#titre_13">Les poursuites</a></li>
-                            <li><a href="#titre_14">Quels métiers</a></li>
-                        </ul>
-                        <li><a href="#titre_15">Prix de la formation</a></li>
-                        <li><a href="#titre_16">Comparatif avec d'autres formations</a></li>
                     </ul>
+<<<<<<< HEAD
                 </ul>
             </div>
 
@@ -85,75 +88,119 @@
                 Les chiffres restent un peu près les mêmes que ceux du DUT Informatique, 70% des étudiants ont un BAC général, 29% un BAC technologique, et 1% un BAC professionnel. 
                 
                 La demande de formation ce fait sur Parcoursup et exige souvent une lettre de motivation. 
+=======
+                </div>
+    
+                <div id="contenu_page" class="bordure"> 
+>>>>>>> 01cf0aefff7d957ef59887d330fc670c34969c71
                 
-                Le taux d’admission est entre 17% et 53%. 
-                </p> 
-
-                <h2 id="titre_4"> Déroulé de la formation </h2> 
-
-                <h3 id="titre_5"> Durée </h3> 
-
-                <p> La formation dure 3 ans.  </p> 
-
-                <h3 id="titre_6"> Les cours </h3> 
-
-                <p> Les cours sont en présentiels sauf pour les stages. Ils contiennent <strong> des matières informatiques </strong> comme l’algorithmie, le c, sql, base de données, web, git, architecture … Et des matières plus <strong> générales </strong> comme l’anglais, l’économie, les mathématiques qui permet au BUT Informatique de se distinguer des différentes formations informatiques. 
-
-                Les cours sont enseignés par des professeurs compétents qui sont soit en plein temps, soit vacataires, ou externes. 
+                    <h1 id="titre_1" role="heading" aria-level="2"> Qu'est ce que le BUT ? </h1> 
+    
+                    <h2 id="titre_2" role="heading" aria-level="3"> Histoire </h2> 
+    
+                    <p> Depuis des années, le DUT Informatique (Diplôme Universitaire de technologie) a enseigné à des étudiants les matières informatiques et générales. Il y avait environ chaque année 70%  des étudiants qui provenaient de BAC général et 30% de BAC technologique. L’effectif était alors d’environ de 8886 étudiants (chiffres prélevés sur : https://www.letudiant.fr/etudes/dut/dut-informatique.html). 
+                    </p> 
+    
+                    <p> Depuis cette année, la formation a été remplacé par le BUT Informatique (Bachelor Universitaire de Technologie). La formation est donc passée de 2 ans à 3 ans. 
+                    Pour en savoir plus sur les changements et différences des deux formations vous pouvez vous rendre sur ce <a href="https://etudiant.aujourdhui.fr/etudiant/info/diplomes-le-dut-devient-le-but-bachelor-universitaire-de-technologie.html" target="_blank" role="link">site</a>. 
+                    </p> 
+    
+                    <h2 id="titre_3" role="heading" aria-level="3"> Admissions </h2> 
+    
+                    <p> Le BUT Informatique est une formation postbac. Il est accessible avec un BAC général de préférence scientifique, avec un BAC technologique de préférence STI2D ou STMG, ou encore avec un BAC professionnel. 
+    
+                    Les chiffres restent un peu près les mêmes que ceux du DUT Informatique, 70% des étudiants ont un BAC général, 29% un BAC technologique, et 1% un BAC professionnel. 
+                    
+                    La demande de formation ce fait sur Parcoursup et exige souvent une lettre de motivation. 
+                    
+                    Le taux d’admission est entre 17% et 53%. 
+                    </p> 
+    
+                    <h2 id="titre_4" role="heading" aria-level="3"> Déroulé de la formation </h2> 
+    
+                    <h3 id="titre_5" role="heading" aria-level="4"> Durée </h3> 
+    
+                    <p> La formation dure 3 ans.  </p> 
+    
+                    <h3 id="titre_6" role="heading" aria-level="4"> Les cours </h3> 
+    
+                    <p> Les cours sont en présentiels sauf pour les stages. Ils contiennent <strong> des matières informatiques </strong> comme l’algorithmie, le c, sql, base de données, web, git, architecture … Et des matières plus <strong> générales </strong> comme l’anglais, l’économie, les mathématiques qui permet au BUT Informatique de se distinguer des différentes formations informatiques. 
+    
+                    Les cours sont enseignés par des professeurs compétents qui sont soit en plein temps, soit vacataires, ou externes. 
+                    
+                    Des projets encadrés doivent être réalisés dans la formation, <strong> des heures sont prévues dans l’emploi du temps, mais peuvent aussi être à réalisés chez les étudiants. </strong> 
+                    </p> 
                 
-                Des projets encadrés doivent être réalisés dans la formation, <strong> des heures sont prévues dans l’emploi du temps, mais peuvent aussi être à réalisés chez les étudiants. </strong> 
-                </p> 
-            
-                <h3 id="titre_7"> Les notations </h3> 
-
-                <p> Les notations sont faîtes sur le principe du <strong> contrôle continu </strong>, <strong> des D.S. de groupe </strong> sont faits régulièrement, <strong> des D.S. de promos </strong> sont aussi réalisés à chaque fin de grandes parties et <strong> les projets encadrés son eux aussi notés. </strong> 
-
-                Pour valider un semestre il faut avoir une moyenne générale supérieur ou égale à 10/ 20 et avoir au moins 8 de moyenne à chaque matière. 
-                </p> 
-
-                <h3 id="titre_8"> Deroulé général de la formation </h3> 
-
-                <p> Les cours se déoulent en temps pleins dans la première année du BUT Informatique. Dès la deuxième année, les étudiants devront choisir leur parcours (liste disponible sur la page <a href = "Liste_des_IUT" > liste des IUT </a>). Suivant leur parcours, ils pourront être amenés à travailler en alternance dès la deuxième année. 
-                    Dans le cas contraire ils suivrons un stage au semestre 4 pour appréhender le monde du travail dans l'informatique. 
-                    La troisième année du BUT Informatique devra être suivi obligatoirement en alternance.  
-                    Voici un tableau récapitulatif du déroulement général de la formation. 
-                </p> 
-
-                <div id = "tableau" > 
-                    <div id = "premierecase" >  
-                        <p> Cours en présentiels </p> 
-
-                        <p> 2 semestres </p> 
-                    </div> 
-
-                    <div id = "deuxiemecase" > 
-                        <div id = "deuxsemalternance" > 
-                            <p> Alternance </p> 
-
+                    <h3 id="titre_7" role="heading" aria-level="4"> Les notations </h3> 
+    
+                    <p> Les notations sont faîtes sur le principe du <strong> contrôle continu </strong>, <strong> des D.S. de groupe </strong> sont faits régulièrement, <strong> des D.S. de promos </strong> sont aussi réalisés à chaque fin de grandes parties et <strong> les projets encadrés son eux aussi notés. </strong> 
+    
+                    Pour valider un semestre il faut avoir une moyenne générale supérieur ou égale à 10/ 20 et avoir au moins 8 de moyenne à chaque matière. 
+                    </p> 
+    
+                    <h3 id="titre_8" role="heading" aria-level="4"> Deroulé général de la formation </h3> 
+    
+                    <p> Les cours se déoulent en temps pleins dans la première année du BUT Informatique. Dès la deuxième année, les étudiants devront choisir leur parcours (liste disponible sur la page <a href = "Liste_des_IUT" > liste des IUT </a>). Suivant leur parcours, ils pourront être amenés à travailler en alternance dès la deuxième année. 
+                        Dans le cas contraire ils suivrons un stage au semestre 4 pour appréhender le monde du travail dans l'informatique. 
+                        La troisième année du BUT Informatique devra être suivi obligatoirement en alternance.  
+                        Voici un tableau récapitulatif du déroulement général de la formation. 
+                    </p> 
+    
+                    <div id = "tableau" > 
+                        <div id = "premierecase" >  
+                            <p> Cours en présentiels </p> 
+    
                             <p> 2 semestres </p> 
                         </div> 
-
-                        <div id = "deuxsempresentiels" > 
-                        <div id = "presentiels" >  
-                            <p> Cours en présentiels </p> 
-
-                            <p> 1 semestre </p> 
-                        </div>  
-
-                            <div id = "deuxsemstage" > 
-                                <p> Stage </p> 
+    
+                        <div id = "deuxiemecase" > 
+                            <div id = "deuxsemalternance" > 
+                                <p> Alternance </p> 
+    
+                                <p> 2 semestres </p> 
+                            </div> 
+    
+                            <div id = "deuxsempresentiels" > 
+                            <div id = "presentiels" >  
+                                <p> Cours en présentiels </p> 
     
                                 <p> 1 semestre </p> 
-                            </div> 
-                        </div>
-                    </div> 
-
-                    <div id = "deuxiemecase" > 
-                        <div id = "alternance1" > 
-                            <p> Alternance </p> 
-
-                            <p> 2 semestres </p> 
+                            </div>  
+    
+                                <div id = "deuxsemstage" > 
+                                    <p> Stage </p> 
+        
+                                    <p> 1 semestre </p> 
+                                </div> 
+                            </div>
                         </div> 
+    
+                        <div id = "deuxiemecase" > 
+                            <div id = "alternance1" > 
+                                <p> Alternance </p> 
+    
+                                <p> 2 semestres </p> 
+                            </div> 
+    
+                            <div id = "alternance2" > 
+                                <p> Alternance </p> 
+    
+                                <p> 2 semestres </p> 
+                            </div>
+                        </div> 
+<<<<<<< HEAD
+    
+                        <div id = "tableaufleche" > 
+                        <p> -------------------> </p> 
+    
+                        <p> --------------------------------> </p> 
+    
+                        <p> --------------------------------------------> </p> 
+    
+                        <p> --------------------------------> </p> 
+    
+                        <p> -------------------> </p> 
+=======
 
                         <div id = "alternance2" > 
                             <p> Alternance </p> 
@@ -230,140 +277,200 @@
                             <p> Diplôme d'ingénieur </p> 
 
                             <p> 2 ans </p> 
+>>>>>>> 35489eb5c1b816433db08453dd8f50405e354052
                         </div> 
-
-                        <div id = "masterinformatique" > 
-                            <p> Master informatique </p> 
-
-                            <p> 2 ans </p> 
-                        </div>
                     </div> 
-
-                    <div id = "tableaufleche" > 
-                    <p> -------------------> </p> 
-
-                    <p> --------------------------------> </p> 
-
-                    <p> --------------------------------------------> </p> 
-
-                    <p> --------------------------------> </p> 
-
-                    <p> -------------------> </p> 
-                    </div> 
-                </div> 
-
-                <p> ------1 an------- ------2 ans------ ------3 ans------ ------4 ans------ ------5 ans------ </p> 
-
-                <h3 id="titre_14"> Quels métiers </h3> 
-
-                <p> 
-                    Voici une liste d'exemple de métiers pour lesquels vous pourraient travailler en faisant le BUT Informatique. 
-                </p> 
-
-                <ul>
-                    <li> Concepteur (applications mobiles, web, jeux vidéos etc.) ; </li> 
-                    <li> Développeur web (front-end/back-end) </li> 
-                    <li> Développeur d'applications mobiles </li> 
-                    <li> Techniciens en maintenance </li> 
-                    <li> Analyste programmeur ; </li> 
-                    <li> Administrateur des systèmes, des réseaux ou des bases de données </li> 
-                </ul> 
-
-                <h2 id="titre_15"> Prix de la formation </h2> 
-
-                <p> La formation a la chance d'être une formation contrôlée par l'Etat, donc les coûts de celle-ci restent relativement bas. 
-                    Le coût correspond donc aux droits universitaires : 170 euros + 92 euros de CVEC. 
-                    Cependant, la formation est entièrement gratuite pour les boursiers. 
-                </p> 
-
-                <h2 id="titre_16"> Comparatif avec les autres formations </h2> 
-
-                <p> Il existe différentes formations informatiques, voici un comparatif avec les autres formations </p> 
-
-                <table> 
-                    <tr> 
-                        <td> </td> 
-                        <td> BUT </td> 
-                        <td> License </td> 
-                        <td> BTS </td> 
-                    </tr> 
-
-                    <tr> 
-                        <td> Durée </td> 
-                        <td> 3 ans </td> 
-                        <td> 3 ans </td> 
-                        <td> 2 ans </td> 
-                    </tr> 
-
-                    <tr> 
-                        <td> Admissions </td> 
-                        <td> Bac général <div id = "plus" > 70% </div>Bac technologique <div id = "moyen" > 29% </div>Bac professionnel <div id = "peu" > 1% </div></td> 
-                        <td> Bac général <div id = "plus" > +++ </div>Bac technologique <div id = "moyen" > ++ </div>Bac professionnel <div id = "peu" > + </div></td> 
-                        <td> Bac général <div id = "moyen" > ++ </div>Bac technologique <div id = "plus" > +++ </div>Bac professionnel <div id = "peu" > + </div></td> 
-                    </tr>
-
-                    <tr> 
-                        <td> Débouchés </td> 
-                        <td> 
-                            <ul>
-                                <li> Concepteur (applications mobiles, web, jeux vidéos etc.) ; </li> 
-                                <li> Développeur web (front-end/back-end) </li> 
-                                <li> Développeur d'applications mobiles </li> 
-                                <li> Techniciens en maintenance </li> 
-                                <li> Analyste programmeur ; </li> 
-                                <li> Administrateur des systèmes, des réseaux ou des bases de données </li> 
-                            </ul>
-                        </td> 
+    
+                    <p> -----------1 sem----------- -----------2 sem----------- -----------3 sem----------- -----------4 sem----------- -----------5 sem---------- -----------6 sem----------- </p> 
                     
-                        <td> 
-                            <ul> 
-                                <li> Concepteur et développeur d’applications ou de sites </li>
-                                <li> Analyste programmeur </li> 
-                                <li> Adjoint ou assistant ingénieur </li> 
-                                <li> Administrateur de base de données ou de systèmes </li> 
-                                <li> Technico-commercial </li> 
-                                <li> Technicien de maintenance informatique et bureautique </li> 
-                                <li> Chargé de production et d’exploitation de systèmes d’information </li> 
-                                <li> Webmestre </li> 
-                                <li> Gestionnaire de parc informatique </li>
-                            </ul> 
-                        </td> 
-
-                        <td> 
-                            <ul> 
-                                <li> Technicien systèmes et réseaux </li> 
-                                <li> Technicien d'infrastructure </li>
-                            </ul>  
-                        </td> 
-                    </tr>
-
-                </table> 
-
-            </div> 
-
-            <div id="fleche">
-                <a href="#"><img src="images/img_109187.png"></a>
+                    <h2 id="titre_9" role="heading" aria-level="3"> Les activités extra-scolaires </h2>  
+    
+                    <p> Les activités extra-scolaires sont parfois proposées par les I.U.T. par exemple le sport, la musique, le théâtre … Pour en savoir plus rendez-vous sur la page I.U.T. et allez sur le site de votre I.U.T. 
+                        Ces activités extra-scolaires peuvent aussi rajouter des points dans la notation. Une deuxième langue peut aussi être choisie par l'étudiant, celle-ci rajoute aussi des points dans la notation. 
+                    </p> 
+    
+                    <h2 id="titre_10" role="heading" aria-level="3"> Le diplôme </h2> 
+    
+                    <p> Le BUT Informatique est un diplôme reconnu par l’Etat. Il correspond à un BAC + 3. Il est de grade de licence. Le diplôme ce veut plus professionnalisant et plus tourné vers l’internationale. 
+                    </p> 
+    
+                    <h2 id="titre_11" role="heading" aria-level="3"> Les parcours </h2> 
+    
+                    <p> 
+                        Les parcours sont différents selon chaque IUT. Vous pouvez trouvez ci-dessous la liste de tous les parcours proposés. 
+                    </p> 
+    
+                    <ul role="list"> 
+                        <li role="listitem"> parcours réalisation d'applications : conception, développement, validation </li> 
+                        <li role="listitem"> parcours administration, gestion et exploitation des données </li> 
+                        <li role="listitem"> parcours déploiement, intégration d'applications et management du système d'information </li> 
+                        <li role="listitem"> parcours déploiement d'applications communicantes et sécurisées </li>
+                    </ul> 
+    
+                    <p> Pour chaque parcours des matières sprécifiques sont enseignées et peuvent avoir une plus ou moins grande quantité de cours généraux commme pour le parcours 
+                        déploiement, intégration d'applications et management du système d'information où les cours de mathématiques sont présents  dans une moins grande quantité que pour les autres parcours. 
+                    </p> 
+    
+                    <h2 id="titre_12" role="heading" aria-level="3"> Débouchés </h2> 
+    
+                    <p> 
+                    Les débouchés sont très différents. Deux choix s'offrent aux étudiants à la fin des trois ans du BUT Informatique. Soit ils poursuivent leurs études,  
+                    soit ils vont directement sur le marché de l'emploi. 
+                    </p> 
+                
+                    <h3 id="titre_13" role="heading" aria-level="4"> Les poursuites d'études </h3> 
+    
+                    <p> 
+                        Voici un tableau récapitulatif des poursuites d'études après le BUT Informatique. 
+                    </p> 
+    
+                    <div id = "tableau" > 
+                        <div id = "premierecase" >  
+                            <p> BUT </p> 
+    
+                            <p> 3 ans </p> 
+                        </div> 
+    
+                        <div id = "deuxiemecase" > 
+                            <div id = "ingenieur" > 
+                                <p> Diplôme d'ingénieur </p> 
+    
+                                <p> 2 ans </p> 
+                            </div> 
+    
+                            <div id = "masterinformatique" > 
+                                <p> Master informatique </p> 
+    
+                                <p> 2 ans </p> 
+                            </div>
+                        </div> 
+    
+                        <div id = "tableaufleche" > 
+                        <p> -------------------> </p> 
+    
+                        <p> --------------------------------> </p> 
+    
+                        <p> --------------------------------------------> </p> 
+    
+                        <p> --------------------------------> </p> 
+    
+                        <p> -------------------> </p> 
+                        </div> 
+                    </div> 
+    
+                    <p> ------1 an------- ------2 ans------ ------3 ans------ ------4 ans------ ------5 ans------ </p> 
+    
+                    <h3 id="titre_14" role="heading" aria-level="4"> Quels métiers </h3> 
+    
+                    <p> 
+                        Voici une liste d'exemple de métiers pour lesquels vous pourraient travailler en faisant le BUT Informatique. 
+                    </p> 
+    
+                    <ul role="list">
+                        <li role="listitem"> Concepteur (applications mobiles, web, jeux vidéos etc.) ; </li> 
+                        <li role="listitem"> Développeur web (front-end/back-end) </li> 
+                        <li role="listitem"> Développeur d'applications mobiles </li> 
+                        <li role="listitem"> Techniciens en maintenance </li> 
+                        <li role="listitem"> Analyste programmeur ; </li> 
+                        <li role="listitem"> Administrateur des systèmes, des réseaux ou des bases de données </li> 
+                    </ul> 
+    
+                    <h2 id="titre_15" role="heading" aria-level="3"> Prix de la formation </h2> 
+    
+                    <p> La formation a la chance d'être une formation contrôlée par l'Etat, donc les coûts de celle-ci restent relativement bas. 
+                        Le coût correspond donc aux droits universitaires : 170 euros + 92 euros de CVEC. 
+                        Cependant, la formation est entièrement gratuite pour les boursiers. 
+                    </p> 
+    
+                    <h2 id="titre_16" role="heading" aria-level="3"> Comparatif avec les autres formations </h2> 
+    
+                    <p> Il existe différentes formations informatiques, voici un comparatif avec les autres formations </p> 
+    
+                    <table role="list"> 
+                        <tr role="row"> 
+                            <td role="cell"> </td> 
+                            <td role="cell"> BUT </td> 
+                            <td role="cell"> License </td> 
+                            <td role="cell"> BTS </td> 
+                        </tr> 
+    
+                        <tr role="list"> 
+                            <td role="cell"> Durée </td> 
+                            <td role="cell"> 3 ans </td> 
+                            <td role="cell"> 3 ans </td> 
+                            <td role="cell"> 2 ans </td> 
+                        </tr> 
+    
+                        <tr role="list"> 
+                            <td role="cell"> Admissions </td> 
+                            <td role="cell"> Bac général <div id = "plus" > 70% </div>Bac technologique <div id = "moyen" > 29% </div>Bac professionnel <div id = "peu" > 1% </div></td> 
+                            <td role="cell"> Bac général <div id = "plus" > +++ </div>Bac technologique <div id = "moyen" > ++ </div>Bac professionnel <div id = "peu" > + </div></td> 
+                            <td role="cell"> Bac général <div id = "moyen" > ++ </div>Bac technologique <div id = "plus" > +++ </div>Bac professionnel <div id = "peu" > + </div></td> 
+                        </tr>
+    
+                        <tr role="list"> 
+                            <td role="cell"> Débouchés </td> 
+                            <td role="cell"> 
+                                <ul role="list">
+                                    <li role="listitem"> Concepteur (applications mobiles, web, jeux vidéos etc.) ; </li> 
+                                    <li role="listitem"> Développeur web (front-end/back-end) </li> 
+                                    <li role="listitem"> Développeur d'applications mobiles </li> 
+                                    <li role="listitem"> Techniciens en maintenance </li> 
+                                    <li role="listitem"> Analyste programmeur ; </li> 
+                                    <li role="listitem"> Administrateur des systèmes, des réseaux ou des bases de données </li> 
+                                </ul>
+                            </td> 
+                        
+                            <td role="cell"> 
+                                <ul role="list"> 
+                                    <li role="listitem"> Concepteur et développeur d’applications ou de sites </li>
+                                    <li role="listitem"> Analyste programmeur </li> 
+                                    <li role="listitem"> Adjoint ou assistant ingénieur </li> 
+                                    <li role="listitem"> Administrateur de base de données ou de systèmes </li> 
+                                    <li role="listitem"> Technico-commercial </li> 
+                                    <li role="listitem"> Technicien de maintenance informatique et bureautique </li> 
+                                    <li role="listitem"> Chargé de production et d’exploitation de systèmes d’information </li> 
+                                    <li role="listitem"> Webmestre </li> 
+                                    <li role="listitem"> Gestionnaire de parc informatique </li>
+                                </ul> 
+                            </td> 
+    
+                            <td role="cell"> 
+                                <ul role="list"> 
+                                    <li role="listitem"> Technicien systèmes et réseaux </li> 
+                                    <li role="listitem"> Technicien d'infrastructure </li>
+                                </ul>  
+                            </td> 
+                        </tr>
+    
+                    </table> 
+    
+                </div> 
+    
+                <div id="fleche">
+                    <a href="#" role="button"><img src="images/img_109187.png" alt="Fleche" role="img"></a>
+                </div>
+    
+                <!-------- Bas de page -------->
+                <footer role="contentinfo">
+                    <div id="footer_texte"> 
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="#" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="page4_A_propos_de_nous.html" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="page5_Liste_des_IUT.html" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="page6_contact.html" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                        <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
+                    </div>
+                    <div id="footer_images">
+                        <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT" role="img">
+                        <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT" role="img">
+                    </div>
+                </footer>
             </div>
-
-            <!-------- Bas de page -------->
-            <footer>
-                <div id="footer_texte"> 
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="#">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="page4_A_propos_de_nous.html">A propos de nous</a></li>
-                        <li><a href="page5_Liste_des_IUT.html">Liste des IUT</a></li>
-                        <li><a href="page6_contact.html">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
-                    </ul>
-                    <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
-                </div>
-                <div id="footer_images">
-                    <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT">
-                    <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT">
-                </div>
-            </footer>
-        </div>
+        </main>
     </body>
 </html>

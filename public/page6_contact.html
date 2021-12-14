@@ -1,134 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" role="document">
     <head>
         <title>Contact</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="page">
-            <!------- En-tête ------->
-            <div id="header">
-                <header>
-                    <div id="fond_bleu">
-                        <p>< BUT class="Informatique" /></p>
-                    </div>
-                    <div id="fond_image"></div>
-                </header>
-                <nav>
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="page2_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="page4_A_propos_de_nous.html">A propos de nous</a></li>
-                        <li><a href="page5_Liste_des_IUT.html">Liste des IUT</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!---- Contenu de la page (à changer en fonction de la page) ----> 
-
-            <div id = "page_professionnels" > 
-                <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
-
-                <div id="boutton_blanc"> 
-                    <a href = "page7_aide.html" >Aller sur la page</a>
+        <main role="main">
+            <div id="page">
+                <!------- En-tête ------->
+                <div id="header">
+                    <header role="banner">
+                        <div id="fond_bleu">
+                            <p role="heading" aria-level="1">< BUT class="Informatique" /></p>
+                        </div>
+                        <div id="fond_image"></div>
+                    </header>
+                    <nav role="navigation">
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="page2_qu'est_ce_que_le_but.html" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="page4_A_propos_de_nous.html" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="page5_Liste_des_IUT.html" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="#" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-
-            <div id="sommaire" class="bordure">
-                <h1>Sommaire</h1>
-                <ul>
-                    <li><a href="#titre_1">Contact</a></li>
-                    <ul>
-                        <li><a href="#titre_2">Formulaire de contact</a></li>
-                    </ul>
-                </ul>
-            </div>
-
-            <div id="contenu_page" class="bordure"> 
-                <h1 id="titre_1"> Contact </h1>
-                    <div id="formulaire">
-                        <section id = "texte" >  
-                            <p> Si vous avez des questions, vous pouvez nous contacter à l'aide du formulaire ci-contre </p>
-                        </section> 
+                <!---- Contenu de la page (à changer en fonction de la page) ----> 
     
-                    <div id = "contact" >  
-                        <h2 id="titre_2"> Formulaire de contact </h2> 
-
-                        <form method = "post" action = "mailto:cocogesseentressangle@gmail.com"> 
-
-                            <div id = "identite" > 
-                                <label for = "prenom" > 
-                                    <p>Prénom :</p> 
-                                </label> 
-                                <input type = "text" id  = "prenom" placeholder = "Rose" required > 
-
-                                <label for = "nom" > 
-                                    <p>Nom :</p> 
-                                </label> 
-                                <input type = "text" id = "nom" placeholder = "Martin" required > 
-
-                            </div> 
-
-                            <div id = "email" > 
-
-                                <label for = "e-mail" > 
-                                    <p>E-mail :</p> 
-                                </label> 
-                                <input type = "email" id = "e-mail" placeholder = "votreprenom.nom@domaine.fr" required > 
-
-                                <label for = "sujet" > 
-                                    <p>Sujet :</p>  
-                                </label> 
-                        
-                                <select name="sujet" id="sujet" required>
-                                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-                                    <option value = "questiongenerale" > Question générale </option>
-                                    <option value = "questioniut" > Question sur les I.U.T. </option>
-                                    <option value = "questionsurlespoursuitesetude" > Question sur les poursuites d'étude </option> 
-                                </select> 
-
-                            </div> 
-
-                            <div id = "message" > 
-
-                                <label for = "message" > 
-                                    <p>Votre message :</p> 
-                                </label>
-                                <textarea id = "message" name = "message" placeholder = "Message" required></textarea> 
-                            </div> 
-
-                            <button type = "submit" > Envoyer mon message </button>
-                        </form>
+                <div id = "page_professionnels" > 
+                    <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
+    
+                    <div id="boutton_blanc"> 
+                        <a href = "page7_profils.html" role="button">Aller sur la page</a>
                     </div>
-                </div> 
-            </div> 
-
-            <div id="fleche">
-                <a href="#"><img src="images/img_109187.png"></a>
-            </div>
-            
-            <!-------- Bas de page -------->
-            <footer>
-                <div id="footer_texte"> 
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="page2_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="page4_A_propos_de_nous.html">A propos de nous</a></li>
-                        <li><a href="page5_Liste_des_IUT.html">Liste des IUT</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
+                </div>
+    
+                <div id="sommaire" class="bordure">
+                    <h1 role="heading" aria-level="2">Sommaire</h1>
+                    <ul role="list">
+                        <li role="listitem"><a href="#titre_1" role="link">Contact</a></li>
+                        <ul role="list">
+                            <li role="listitem"><a href="#titre_2" role="link">Formulaire de contact</a></li>
+                        </ul>
                     </ul>
-                    <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
                 </div>
-                <div id="footer_images">
-                    <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT">
-                    <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT">
+    
+                <div id="contenu_page" class="bordure"> 
+                    <h1 id="titre_1" role="heading" aria-level="2"> Contact </h1>
+                        <div id="formulaire">
+                            <section id = "texte" >  
+                                <p> Si vous avez des questions, vous pouvez nous contacter à l'aide du formulaire ci-contre </p>
+                            </section> 
+        
+                        <div id = "contact" >  
+                            <h2 id="titre_2" role="heading" aria-level="3"> Formulaire de contact </h2> 
+    
+                            <form method = "post" action = "mailto:cocogesseentressangle@gmail.com" role="form"> 
+    
+                                <div id = "identite" > 
+                                    <label for = "prenom" > 
+                                        <p>Prénom :</p> 
+                                    </label> 
+                                    <input type = "text" id  = "prenom" placeholder = "Rose" required role="textbox"> 
+    
+                                    <label for = "nom" > 
+                                        <p>Nom :</p> 
+                                    </label> 
+                                    <input type = "text" id = "nom" placeholder = "Martin" required role="textbox"> 
+    
+                                </div> 
+    
+                                <div id = "email" > 
+    
+                                    <label for = "e-mail" > 
+                                        <p>E-mail :</p> 
+                                    </label> 
+                                    <input type = "email" id = "e-mail" placeholder = "votreprenom.nom@domaine.fr" required role="textbox"> 
+    
+                                    <label for = "sujet" > 
+                                        <p>Sujet :</p>  
+                                    </label> 
+                            
+                                    <select name="sujet" id="sujet" required>
+                                        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                                        <option value = "questiongenerale" > Question générale </option>
+                                        <option value = "questioniut" > Question sur les I.U.T. </option>
+                                        <option value = "questionsurlespoursuitesetude" > Question sur les poursuites d'étude </option> 
+                                    </select> 
+    
+                                </div> 
+    
+                                <div id = "message" > 
+    
+                                    <label for = "message" > 
+                                        <p>Votre message :</p> 
+                                    </label>
+                                    <textarea id = "message" name = "message" placeholder = "Message" required role="textbox"></textarea> 
+                                </div> 
+    
+                                <button type = "submit" role="button"> Envoyer mon message </button>
+                            </form>
+                        </div>
+                    </div> 
+                </div> 
+    
+                <div id="fleche">
+                    <a href="#" role="button"><img src="images/img_109187.png" alt="Fleche" role="img"></a>
                 </div>
-            </footer>
-        </div>
+                
+                <!-------- Bas de page -------->
+                <footer role="contentinfo">
+                    <div id="footer_texte"> 
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="page2_qu'est_ce_que_le_but.html" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="page4_A_propos_de_nous.html" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="page5_Liste_des_IUT.html" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="#" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                        <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
+                    </div>
+                    <div id="footer_images">
+                        <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT" role="img">
+                        <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT" role="img">
+                    </div>
+                </footer>
+            </div>
+        </main>
     </body>
 </html>
