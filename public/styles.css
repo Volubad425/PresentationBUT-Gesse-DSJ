@@ -155,6 +155,25 @@ h1, h2, h3{
     text-shadow: white 1px 0 10px;
 }
 
+#page h1, #page h2, #page h3{
+    padding: 15px;
+    border-top-left-radius: 30px; 
+    border: 4px white solid;
+    box-shadow: 0px 0px 6px 2px white;
+}
+
+#page h1 { 
+    background-color: #C34444;
+}
+
+#page h2 { 
+    background-color: #8851F5;
+} 
+
+#page h3 { 
+    background-color: #18bb3c;
+} 
+
 label {
     font-family: "JosefinSans-Medium", sans-serif;
 }
@@ -275,24 +294,10 @@ button:hover{
 
 /* -------- Page 1 -------- */
 
-#accueil_contenu h1{
-    border-bottom: solid 4px #C34444;
-}
-
-#accueil_contenu h2{
-    border-bottom: solid 4px #8851F5;
-}
-
-#accueil_contenu .image{
+.accueil_image{
     text-align: center;
-}
-
-#accueil_contenu .image img{
     width: 400px;
     height: 267px;
-}
-
-#accueil_contenu .image p{
     margin-top: 2px;
     font-size: 13px;
     font-family: sans-serif;
@@ -379,18 +384,6 @@ button:hover{
 
 #deuxsempresentiels { 
     display : flex; 
-} 
-
-#page h1 { 
-    border-bottom: solid 4px #C34444; 
-}
-
-#page h2 { 
-    border-bottom: solid 4px #8851F5;
-} 
-
-#page h3 { 
-    border-bottom: solid 4px #18bb3c; 
 } 
 
 #page table {
