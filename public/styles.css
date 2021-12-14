@@ -97,7 +97,6 @@ header #fond_image{
     position: relative;
     background-color: black;
     border-radius: var(--Taillebordure);
-    box-shadow: 0px 0px 6px 3px white;
 }
 
 .bordure:after {
@@ -158,20 +157,21 @@ h1, h2, h3{
 #page h1, #page h2, #page h3{
     padding: 15px;
     border-top-left-radius: 30px; 
-    border: 4px white solid;
-    box-shadow: 0px 0px 6px 2px white;
 }
 
 #page h1 { 
     background-color: #C34444;
+    box-shadow: 0px 0px 6px 3px #C34444;
 }
 
 #page h2 { 
     background-color: #8851F5;
+    box-shadow: 0px 0px 6px 3px #8851F5;
 } 
 
 #page h3 { 
     background-color: #18bb3c;
+    box-shadow: 0px 0px 6px 3px #18bb3c;
 } 
 
 label {
@@ -426,7 +426,6 @@ button:hover{
     width : 60%;  
     height : 300px;
     padding: 10px;
-    box-shadow: 0px 0px 6px 2px limegreen;
 }
 
 #personne1{
@@ -530,7 +529,6 @@ button:hover{
     padding: 20px;
     align-items: flex-start;
     color: white;
-    box-shadow: 0px 0px 6px 2px white;
 }
 
 #case1 .nom, #case2 .nom{
@@ -566,7 +564,6 @@ button:hover{
     border-radius: 7px;
     padding: 2px 8px 2px;
     font-family: "JosefinSans-Medium", sans-serif;
-    box-shadow: 0px 0px 6px 2px white;
 }
 
 #square > p {
@@ -583,8 +580,6 @@ button:hover{
 #iut_images img{
     margin: 0px 20px 0px;
     border-radius: 4px;
-    border: 4px solid white;
-    box-shadow: 0px 0px 6px 2px white;
 }
 
 /* -------- Page 6 -------- */ 

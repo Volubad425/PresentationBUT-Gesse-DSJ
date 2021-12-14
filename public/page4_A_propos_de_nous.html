@@ -1,143 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr" role="document">
     <head>
         <title>A propos de nous</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="page">
-            <!------- En-tête ------->
-            <div id="header">
-                <header>
-                    <div id="fond_bleu">
-                        <p>< BUT class="Informatique" /></p>
-                    </div>
-                    <div id="fond_image"></div>
-                </header>
-                <nav>
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="page2_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="#">A propos de nous</a></li>
-                        <li><a href="page5_Liste_des_IUT.html">Liste des IUT</a></li>
-                        <li><a href="page6_contact.html">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!---- Contenu de la page (à changer en fonction de la page) ----> 
-            <div id = "page_professionnels" > 
-                <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
-
-                <div id="boutton_blanc"> 
-                    <a href = "page7_aide.html" >Aller sur la page</a>
+        <main role="main">
+            <div id="page">
+                <!------- En-tête ------->
+                <div id="header">
+                    <header role="banner">
+                        <div id="fond_bleu">
+                            <p role="heading" aria-level="1">< BUT class="Informatique" /></p>
+                        </div>
+                        <div id="fond_image"></div>
+                    </header>
+                    <nav role="navigation">
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="page2_qu'est_ce_que_le_but.html" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="#" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="page5_Liste_des_IUT.html" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="page6_contact.html" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-
-            <div id="sommaire" class="bordure">
-                <h1>Sommaire</h1>
-                <ul>
-                    <li><a href="#titre_1">A propos de nous</a></li>
-                    <ul>
-                        <li><a href="#titre_2">Qui sommes nous ?</a></li>
-                        <li><a href="#titre_3">Explication du projet</a></li>
-                    </ul>
-                </ul>
-            </div>
-
-            <div id="contenu_page" class="bordure">
-
-                <h1 id="titre_1"> A propos de nous </h1>
-
-                <h2 id="titre_2">Qui sommes nous ?</h2>
-
-                <p> Etudiants en BUT Informatique, nous avons eu comme consigne de réaliser, pour un projet web, un site présentant la formation du BUT Informatique. 
-                    Ce projet mène deux matières, le web, et la communication.
+                <!---- Contenu de la page (à changer en fonction de la page) ----> 
+                <div id = "page_professionnels" > 
+                    <p> Vous êtes professionnels, professeurs, parents ou étudiants en reconversion, une page vous est consacrée : </p> 
     
-                </p>
-
-                <div id="case1">
-                    <div id="pp">
-                        <img src="images/20211128_124315.jpg" alt="Corentin GESSE--ENTRESSANGLE">
-                    </div>
-                    <div id="description">
-                        <p class="nom">Corentin GESSE--ENTRESSANGLE</p>
-                        <p class="fonction_actuelle">Etudiant en BUT Informatique à l'IUT Lyon 1 à Villeurbanne</p>
-                        <p> Passionné par l'informatique dès mon plus jeune âge, je choisi en seconde l'enseignement d'exploration ICN (informatique et créations numériques). J'ai ensuite choisi la spécialité NSI et mathématiques en terminale pour être en accord avec mon projet professionnel. 
-                            Je me suis orienté cette année en BUT Informatique après avoir hésiter avec une license informatique et mathématiques et un bts SIO ou SN.   
-                            J'ai choisi cette formation pour ces matières générales, son accompagnement des étudiants et pour sa qualité d'être une formation professionnalisante.  
-                        </p>
+                    <div id="boutton_blanc"> 
+                        <a href = "page7_profils.html" role="button">Aller sur la page</a>
                     </div>
                 </div>
-
-                <div id="case2">
-                    <div id="pp">
-                        <img src="images/ezgif-6-6841ad3d7920.gif" alt="Nicolas DE SAINT JEAN">
-                    </div>
-                    <div id="description">
-                        <p class="nom">Nicolas DE SAINT JEAN</p>
-                        <p class="fonction_actuelle">Etudiant en BUT Informatique à l'IUT Lyon 1 à Villeurbanne</p>
-                        <p>Je suis titulaire d'un baccalauréat technologie STI2D spécialté SIN (Système d'information et numérique), passionné par l'informatique et la culture scientifique depuis plusieurs 
-                           années, je voulais m'orienter vers une formation où je pourrais apprendre pleinement les différents domaines de l'informatique et aussi profiter de ma passion. Au début mon choix 
-                           était surtout tourné vers un BTS SIO ou SN mais dès que je me suis renseigné sur le BUT, j'ai remarqué que le contenu de la formation était beaucoup plus complet que celui du BTS. 
-                           Donc après réflexion mon choix fut cette formation, j'ai été admis et j'en suis t'es content aujourd'hui.
-                        </p>
-                    </div>
-                </div>
-
-                <h2 id="titre_3"> Explication du projet </h2> 
-
-                <p> 
-
-                Ce projet consiste à réaliser un site qui présente le BUT Informatique. Après quelques cours de web, communication et git, nous avons donc commencés le prjet. 
-
-                Le site devait contenir plusieurs pages en utilisant le language html, et css, il devait être partagé entre nous deux avec git, et devait être le plus clair et précis possible. 
-
-                Le délai était de deux mois. 
-
-                Afin de répondre au mieux aux attentes des différents profils, nous avons réalisés un questionnaire en amont. Ce questionnaire demandait par exemple si pour les professionnels, il était important que les élèves reçoivent des cours plus généraux comme la communication. 
-                
-                Ou encore, si il était important pour eux que le diplôme soit reconnu par l'Etat. 
-
-                Nous avons ensuite, analysés les réponses pour en distinguer les différents thèmes. 
-
-                Pour avoir une idée de notre site, et pour avoir une idée des différentes pages, nous avons réalisé une maquette. 
-
-                Après toutes ces tâches effectués, nous avons commencés à écrire au language html et css notre site et nous avons finis par décider de vous présenter cette version finale.  
-
-
-
-                Nous espérons que ce site sera à l'hauteur de vos attentes. Nous esperons aussi que toutes les informations que vous aurez besoin seront présentes. 
-
-                </p>
-
-            </div>
-
-            <div id="fleche">
-                <a href="#"><img src="images/img_109187.png"></a>
-            </div>
-
-            <!-------- Bas de page -------->
-            <footer>
-                <div id="footer_texte"> 
-                    <ul>
-                        <li><a href="page1_accueil.html">Accueil</a></li>
-                        <li><a href="page2_qu'est_ce_que_le_but.html">Qu'est-ce que le BUT ?</a></li>
-                        <li><a href="page3_Temoignages.html">Temoignages</a></li>
-                        <li><a href="#">A propos de nous</a></li>
-                        <li><a href="page5_Liste_des_IUT.html">Liste des IUT</a></li>
-                        <li><a href="page6_contact.html">Contact</a></li>
-                        <li><a href="page7_profils.html">Profils</a></li>
+    
+                <div id="sommaire" class="bordure">
+                    <h1 role="heading" aria-level="2">Sommaire</h1>
+                    <ul role="list">
+                        <li role="listitem"><a href="#titre_1" role="link">A propos de nous</a></li>
+                        <ul role="list">
+                            <li role="listitem"><a href="#titre_2" role="link">Qui sommes nous ?</a></li>
+                            <li role="listitem"><a href="#titre_3" role="link">Explication du projet</a></li>
+                        </ul>
                     </ul>
-                    <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
                 </div>
-                <div id="footer_images">
-                    <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT">
-                    <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT">
+    
+                <div id="contenu_page" class="bordure">
+    
+                    <h1 id="titre_1" role="heading" aria-level="2"> A propos de nous </h1>
+    
+                    <h2 id="titre_2" role="heading" aria-level="3">Qui sommes nous ?</h2>
+    
+                    <p> Etudiants en BUT Informatique, nous avons eu comme consigne de réaliser, pour un projet web, un site présentant la formation du BUT Informatique. 
+                        Ce projet mène deux matières, le web, et la communication.
+        
+                    </p>
+    
+                    <div id="case1">
+                        <div id="pp">
+                            <img src="images/20211128_124315.jpg" alt="Corentin GESSE--ENTRESSANGLE" role="img">
+                        </div>
+                        <div id="description">
+                            <p class="nom">Corentin GESSE--ENTRESSANGLE</p>
+                            <p class="fonction_actuelle">Etudiant en BUT Informatique à l'IUT Lyon 1 à Villeurbanne</p>
+                            <p> Passionné par l'informatique dès mon plus jeune âge, je choisi en seconde l'enseignement d'exploration ICN (informatique et créations numériques). J'ai ensuite choisi la spécialité NSI et mathématiques en terminale pour être en accord avec mon projet professionnel. 
+                                Je me suis orienté cette année en BUT Informatique après avoir hésiter avec une license informatique et mathématiques et un bts SIO ou SN.   
+                                J'ai choisi cette formation pour ces matières générales, son accompagnement des étudiants et pour sa qualité d'être une formation professionnalisante.  
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div id="case2">
+                        <div id="pp">
+                            <img src="images/ezgif-6-6841ad3d7920.gif" alt="Nicolas DE SAINT JEAN" role="img">
+                        </div>
+                        <div id="description">
+                            <p class="nom">Nicolas DE SAINT JEAN</p>
+                            <p class="fonction_actuelle">Etudiant en BUT Informatique à l'IUT Lyon 1 à Villeurbanne</p>
+                            <p>Je suis titulaire d'un baccalauréat technologie STI2D spécialté SIN (Système d'information et numérique), passionné par l'informatique et la culture scientifique depuis plusieurs 
+                               années, je voulais m'orienter vers une formation où je pourrais apprendre pleinement les différents domaines de l'informatique et aussi profiter de ma passion. Au début mon choix 
+                               était surtout tourné vers un BTS SIO ou SN mais dès que je me suis renseigné sur le BUT, j'ai remarqué que le contenu de la formation était beaucoup plus complet que celui du BTS. 
+                               Donc après réflexion mon choix fut cette formation, j'ai été admis et j'en suis t'es content aujourd'hui.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <h2 id="titre_3" role="heading" aria-level="3"> Explication du projet </h2> 
+    
+                    <p> 
+    
+                    Ce projet consiste à réaliser un site qui présente le BUT Informatique. Après quelques cours de web, communication et git, nous avons donc commencés le prjet. 
+    
+                    Le site devait contenir plusieurs pages en utilisant le language html, et css, il devait être partagé entre nous deux avec git, et devait être le plus clair et précis possible. 
+    
+                    Le délai était de deux mois. 
+    
+                    Afin de répondre au mieux aux attentes des différents profils, nous avons réalisés un questionnaire en amont. Ce questionnaire demandait par exemple si pour les professionnels, il était important que les élèves reçoivent des cours plus généraux comme la communication. 
+                    
+                    Ou encore, si il était important pour eux que le diplôme soit reconnu par l'Etat. 
+    
+                    Nous avons ensuite, analysés les réponses pour en distinguer les différents thèmes. 
+    
+                    Pour avoir une idée de notre site, et pour avoir une idée des différentes pages, nous avons réalisé une maquette. 
+    
+                    Après toutes ces tâches effectués, nous avons commencés à écrire au language html et css notre site et nous avons finis par décider de vous présenter cette version finale.  
+    
+    
+    
+                    Nous espérons que ce site sera à l'hauteur de vos attentes. Nous esperons aussi que toutes les informations que vous aurez besoin seront présentes. 
+    
+                    </p>
+    
                 </div>
-            </footer>
-        </div>
+    
+                <div id="fleche">
+                    <a href="#" role="link"><img src="images/img_109187.png" alt="Fleche" role="img"></a>
+                </div>
+    
+                <!-------- Bas de page -------->
+                <footer role="contentinfo">
+                    <div id="footer_texte"> 
+                        <ul role="list">
+                            <li role="listitem"><a href="page1_accueil.html" role="link">Accueil</a></li>
+                            <li role="listitem"><a href="page2_qu'est_ce_que_le_but.html" role="link">Qu'est-ce que le BUT ?</a></li>
+                            <li role="listitem"><a href="page3_Temoignages.html" role="link">Temoignages</a></li>
+                            <li role="listitem"><a href="#" role="link">A propos de nous</a></li>
+                            <li role="listitem"><a href="page5_Liste_des_IUT.html" role="link">Liste des IUT</a></li>
+                            <li role="listitem"><a href="page6_contact.html" role="link">Contact</a></li>
+                            <li role="listitem"><a href="page7_profils.html" role="link">Profils</a></li>
+                        </ul>
+                        <p>Réalisation : Nicolas DE SAINT JEAN et Corentin GESSE--ENTRESSANGLE - 2021</p>
+                    </div>
+                    <div id="footer_images">
+                        <img src="images/Logo_de_l'Association_des_directeurs_d'IUT.png" alt="logo_IUT" role="img">
+                        <img src="images/langfr-800px-DL_02_BUT.svg.png" alt="logo_BUT" role="img">
+                    </div>
+                </footer>
+            </div>
+        </main>
     </body>
 </html>
