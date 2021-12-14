@@ -163,7 +163,7 @@ h1, h2, h3{
 }
 
 #page h1 { 
-    background-color:  #C34444;
+    background-color: #C34444;
 }
 
 #page h2 { 
@@ -294,24 +294,10 @@ button:hover{
 
 /* -------- Page 1 -------- */
 
-#accueil_contenu h1{
-    border-bottom: solid 4px #C34444;
-}
-
-#accueil_contenu h2{
-    border-bottom: solid 4px #8851F5;
-}
-
-#accueil_contenu .image{
+.accueil_image{
     text-align: center;
-}
-
-#accueil_contenu .image img{
     width: 400px;
     height: 267px;
-}
-
-#accueil_contenu .image p{
     margin-top: 2px;
     font-size: 13px;
     font-family: sans-serif;
