@@ -422,6 +422,31 @@ button:hover{
     font-weight: bold;
 } 
 
+#logos_langages { 
+    display: flex;
+    justify-content: center;
+} 
+
+#logos_langages img:nth-child(1){
+    width : 10%; 
+} 
+
+#logos_langages img:nth-child(2){ 
+    width : 10%;  
+} 
+
+#logos_langages img:nth-child(3){ 
+    width : 10%;  
+} 
+
+#logos_langages img:nth-child(4){ 
+    width : 10%;  
+} 
+
+#logos_langages img:nth-child(5){ 
+    width : 10%;  
+} 
+
 /* -------- Page 3 -------- */ 
 
 #liste_temoignages{
