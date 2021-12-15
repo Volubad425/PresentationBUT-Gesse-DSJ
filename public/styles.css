@@ -140,18 +140,28 @@ header #fond_image{
     font-family: "JosefinSans-Medium", sans-serif;
 }
 
-#contenu_page a{
+p a{
     color: red;
     text-decoration: none;
 }
 
-#contenu_page a:hover{
+p a:hover{
     text-decoration: underline;
 }
 
 h1, h2, h3{
     font-family: "JosefinSans-Light", sans-serif;
     text-shadow: white 1px 0 10px;
+}
+
+#page h2 a{
+    color: white;
+    text-decoration: none;
+}
+
+#page h2 a:hover{
+    color: red;
+    text-shadow: red 1px 0 10px;
 }
 
 #page h1, #page h2, #page h3{
@@ -580,6 +590,15 @@ button:hover{
 #iut_images img{
     margin: 0px 20px 0px;
     border-radius: 4px;
+}
+
+.iut_lien{
+    color: white;
+}
+
+.iut_lien:hover{
+    color: red;
+    text-decoration: none;
 }
 
 /* -------- Page 6 -------- */ 
