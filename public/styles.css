@@ -304,15 +304,16 @@ button:hover{
 
 /* -------- Page 1 -------- */
 
-.accueil_image{
+#accueil_image{
+    display: flex;
+    justify-content: center;
+}
+
+#accueil_contenu img{
     text-align: center;
     width: 400px;
     height: 267px;
-    margin-top: 2px;
-    font-size: 13px;
-    font-family: sans-serif;
-    color: #C8C8C8;
-    text-shadow: black 2px;
+    border-radius: 3px;
 }
 
 /* -------- Page 2 -------- */
