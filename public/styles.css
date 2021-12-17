@@ -187,12 +187,12 @@ h1, h2, h3{
     box-shadow: 0px 0px 6px 3px #18bb3c;
 } 
 
-label {
-    font-family: "JosefinSans-Medium", sans-serif;
+#contact {
+    margin: 0px 10px 0px;
 }
 
-#contact{
-    width: 90%;
+label {
+    font-family: "JosefinSans-Medium", sans-serif;
 }
 
 label p{
@@ -203,8 +203,8 @@ input{
     color: white;
     width: 100%;
     height: 15px;
-    margin-bottom: 10px;
     padding: 10px;
+    margin-bottom: 15px;
     border: 2px solid white;
     background-color: black;
     border-radius: 5px;
@@ -238,6 +238,7 @@ select{
     background-color: black;
     font-family: "JosefinSans-Medium", sans-serif;
     border-radius: 5px;
+    margin-bottom: 15px;
     height: 30px;
     padding: 5px;
     text-align: center;
@@ -428,27 +429,39 @@ button:hover{
 
 #logos_langages { 
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0px 30px;
 } 
 
 #logos_langages img:nth-child(1){
-    width : 10%; 
+    width : 200px;
+    height: 113px
 } 
 
 #logos_langages img:nth-child(2){ 
-    width : 10%;  
+    width : 113px;
+    height: 113px  
 } 
 
 #logos_langages img:nth-child(3){ 
-    width : 10%;  
+    width:  151px;
+    height: 113px  
 } 
 
 #logos_langages img:nth-child(4){ 
-    width : 10%;  
+    width: 113px;
+    height: 113px;
 } 
 
 #logos_langages img:nth-child(5){ 
-    width : 10%;  
+    width: 242px;
+    height: 113px;
+} 
+
+#logos_langages img:nth-child(6){ 
+    width: 209px;
+    height: 113px;
 } 
 
 /* -------- Page 3 -------- */ 
@@ -641,13 +654,6 @@ button:hover{
     margin-right : 50px; 
 }
 
-#contact { 
-    margin-top : 0px; 
-    margin-left : 50px; 
-    text-align : justify; 
-    margin-right : 3px; 
-} 
-
 #email {
     margin-top : 5px; 
     flex-direction : column; 
@@ -719,4 +725,93 @@ footer{
     height:115px;
 }
 
-@media screen and (max-width:)
+/* ------- Responsive ------- */
+
+@media screen and (max-width:1228px){
+    #header nav{
+        height: 220px;
+    }
+
+    #header nav ul{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #header nav li{
+        align-self: flex-start;
+        border-left: 1px solid white;
+    }
+}
+
+@media screen and (max-width:1280px){
+    #logos_langages { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 900px;
+    } 
+}
+
+@media screen and (max-width:1075px){
+    #iut_images{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #iut_images img{
+        margin: 20px 0px 20px;;
+    }
+}
+
+@media screen and (max-width:1060px){
+    #footer_texte ul{
+        flex-direction: column;
+        height: 180px;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (max-width:720px){
+    #contenu_titre{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #personne1, #personne2 { 
+        height : 400px;
+    }
+}
+
+@media screen and (max-width:625px){
+
+    #case1, #case2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #case1 p:nth-child(3), #case2 p:nth-child(3){
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:570px){
+    header #fond_bleu p{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:510px){
+    #personne1, #personne2 { 
+        height : 500px;
+    }
+}
+
+@media screen and (max-width:450px){
+    header #fond_bleu p{
+        font-size: 20px;
+    }
+}
