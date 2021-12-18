@@ -677,6 +677,7 @@ footer{
     border-top: solid white 5px;
     background-color: black;
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     text-shadow: white 1px 0 10px;
