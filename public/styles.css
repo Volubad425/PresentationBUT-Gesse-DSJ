@@ -805,6 +805,13 @@ footer{
     }
 }
 
+@media screen and (max-width:580px) {
+    #accueil_contenu img{
+        width: 255px;
+        height: 170px;
+    }
+}
+
 @media screen and (max-width:570px){
     header #fond_bleu p{
         font-size: 35px;
