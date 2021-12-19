@@ -738,6 +738,12 @@ footer{
 
 /* ------- Responsive ------- */
 
+@media screen and (max-width:1450px){
+    #tableaufleche{
+        display: none;
+    }
+}
+
 @media screen and (max-width:1228px){
     #header nav{
         height: 350px;
@@ -785,12 +791,6 @@ footer{
         flex-direction: column;
         height: 180px;
         justify-content: space-around;
-    }
-}
-
-@media screen and (max-width:975px){
-    #tableaufleche{
-        display: none;
     }
 }
 
