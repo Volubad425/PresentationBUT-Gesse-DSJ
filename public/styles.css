@@ -740,18 +740,23 @@ footer{
 
 @media screen and (max-width:1228px){
     #header nav{
-        height: 220px;
+        height: 350px;
     }
 
     #header nav ul{
         flex-direction: column;
         justify-content: space-around;
+        padding: 1px;
     }
 
     #header nav li{
         align-self: flex-start;
-        border-left: 1px solid white;
     }
+
+    #header nav a{
+        font-size: 30px;
+    }
+
 }
 
 @media screen and (max-width:1280px){
@@ -780,6 +785,27 @@ footer{
         flex-direction: column;
         height: 180px;
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:975px){
+    #tableaufleche{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px){
+    #tableau{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #premierecase{
+        margin-bottom: 15px;
+    }
+
+    #deuxiemecase{
+        margin-bottom: 15px;
     }
 }
 
